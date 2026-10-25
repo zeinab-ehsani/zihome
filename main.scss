@@ -1662,6 +1662,11 @@ div.swiper-wrapper {
     display: none;
     // background-color: red;
 }
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color:#DC2655!important;
+    border-color:#DC2655!important;
+}
+
 
 // End swiper2
 p.product {
@@ -2626,8 +2631,6 @@ div.banner {
                 padding: 8px 16px;
                 width: 132px;
                 direction: rtl;
-                // height: 32px;
-                // width: auto;
             }
         }
 
@@ -2645,9 +2648,7 @@ div.popular {
 
     >div.line-popular {
         border-bottom: 1px solid #D1D4D4;
-        // width: 80%;
         flex: 1 1 auto;
-        // width: 80%; ← این رو حذف کن
         margin: 0 12px;
 
     }
@@ -2670,11 +2671,10 @@ ul.tabs-favorite {
     width: 85%;
 
 
-    scrollbar-width: none; // فایرفاکس
-    -ms-overflow-style: none; // اینترنت اکسپلورر قدیمی
-
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
     &::-webkit-scrollbar {
-        display: none; // کروم، سافاری، اج
+        display: none; 
     }
 
 }
@@ -3315,11 +3315,6 @@ p.text-fade {
   margin-left: 20px!important;
   margin-right: auto!important;
 }
-
-
-
-
-
 
 @include media(1200) {
     div.title {

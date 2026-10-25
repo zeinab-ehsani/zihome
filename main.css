@@ -1015,6 +1015,11 @@ div.swiper-wrapper > a > img {
   display: none;
 }
 
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #DC2655 !important;
+  border-color: #DC2655 !important;
+}
+
 p.product {
   font-size: clamp(1.25rem, 0.9rem + 1.2vw, 1.75rem);
   color: black;
