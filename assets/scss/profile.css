@@ -27,6 +27,8 @@ body {
 nav.time-line {
   width: 85% !important;
   margin: 30px auto;
+  margin-top: clamp(12px, 3vw, 30px);
+  margin-bottom: clamp(12px, 3vw, 30px);
   padding-right: 0 !important;
 }
 
@@ -367,6 +369,24 @@ input[data-jdp] {
   div.order > div {
     width: 45% !important;
   }
+  .section-sidebar > ul > li:nth-of-type(1) > span > img {
+    width: 20px !important;
+  }
+  .section-sidebar > ul > li:nth-of-type(2) > span > img {
+    width: 20px !important;
+  }
+  .section-sidebar > ul > li {
+    margin: 0px 5px !important;
+  }
+  .section-sidebar > ul > li > img {
+    width: 20px !important;
+  }
+  .section-sidebar > ul > li > span {
+    font-size: 12px !important;
+  }
+  .address-card {
+    width: 74% !important;
+  }
 }
 @media screen and (min-width: 540px) and (max-width: 767.98px) {
   .profile-main {
@@ -425,14 +445,42 @@ input[data-jdp] {
     margin: 10px;
     margin-left: auto;
   }
+  .address-card {
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+  .address-fill {
+    margin-top: 1rem !important;
+    width: 100% !important;
+  }
 }
 @media screen and (max-width: 540px) {
+  .address-card {
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+  .address-fill {
+    margin-top: 1rem !important;
+    width: 100% !important;
+  }
+  .order {
+    margin-top: 1rem !important;
+  }
+  .section-sidebar > ul {
+    justify-content: space-between !important;
+  }
+  .section-sidebar > ul > li:nth-of-type(2) > span:nth-of-type(2) {
+    display: none !important;
+  }
   .profile-main {
     flex-direction: row !important;
     flex-wrap: wrap;
   }
   .section-sidebar {
     width: 100%;
+  }
+  .information {
+    margin-top: 14px !important;
   }
   section.section-sidebar {
     width: 100% !important;
