@@ -46,7 +46,6 @@
             <span class="d-flex flex-row justify-content-between p-2">
               <img src="./assets/img/cart/Trash.svg">2
               <img src="./assets/img/cart/plas.svg">
-              
             </span>
           </span>
         </div>
@@ -57,8 +56,8 @@
       </div>
     </div>
 
-    <div class="left-cart d-flex flex-column gap-3">
-      <div class="top d-flex flex-column gap-3">
+    <div class="left-cart d-flex flex-column gap-2">
+      <div class="top d-flex flex-column gap-2">
         <div class="d-flex justify-content-between">
           <span>بیمه به کالا اضافه شد</span>
           <button class="insurance-btn">
@@ -67,13 +66,13 @@
           </button>
 
         </div>
-        <button class="btn-remove-insurance px-4 align-self-end"><img src="./assets/img/cart/Trashred.svg"> حذف بیمه  </button>
+        <button class="btn-remove-insurance px-4 align-self-end"><img src="./assets/img/cart/Trashred.svg"> حذف بیمه
+        </button>
       </div>
       <div class="bottom">
 
-        <!-- <div class="cart-summary border rounded-2 p-3 bg-white" dir="rtl"> -->
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex  justify-content-between align-items-center mb-3">
           <span class="small">قیمت محصولات</span>
           <span class="small text-nowrap">۸۶,۰۰۰,۰۰۰ تومان</span>
         </div>
@@ -97,39 +96,48 @@
           تأیید و ادامه خرید
         </button>
 
-        <!-- </div> -->
 
       </div>
-    </div>
-<div class="left-cart-buy d-none d-flex flex-column gap-3">
-  <div class="d-flex justify-content-between align-items-center">
-    <span class="bill-title">صورتحساب</span>
-    <span class="bill-count">۳ کالا</span>
-  </div>
+      <a href="#"
+        class="d-flex align-items-center justify-content-start gap-3 border rounded16 p-2  text-body cart-installment"
+        data-mdb-modal-init data-mdb-target="#installmentmodal2">
+                <img src="assets/img/cart/installment.svg" alt="" width="44" height="44">
 
-  <div class="payment-info">
-    <h6 class="text-center">اطلاعات پرداخت</h6>
+        <div>
+          <div class="fw-medium cart-installment-title font14 text-danger">پرداخت قسطی زی پی</div>
+          <small class=" font12 text-black">با خرید بالای ۱۰۰ هزار تومان</small>
+        </div>
+      </a>
+    </div>
+    <div class="left-cart-buy d-none d-flex flex-column gap-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="bill-title">صورتحساب</span>
+        <span class="bill-count">۳ کالا</span>
+      </div>
 
-    <div class="d-flex justify-content-between">
-      <span>قیمت محصولات</span>
-      <span>۸۶،۰۰۰،۰۰۰ تومان</span>
-    </div>
-    <div class="d-flex justify-content-between line">
-      <span>هزینه بیمه</span>
-      <span>۷،۵۰۰،۰۰۰ تومان</span>
-    </div>
-    <div class="d-flex justify-content-between">
-      <span>جمع کل</span>
-      <span>۹۳،۵۰۰،۰۰۰ تومان</span>
-    </div>
-    <div class="d-flex justify-content-between profit">
-      <span>سود شما</span>
-      <span>۱۴،۰۰۰،۰۰۰ تومان</span>
-    </div>
-  </div>
+      <div class="payment-info">
+        <h6 class="text-center">اطلاعات پرداخت</h6>
 
-  <a class="btn-move-all d-inline-block text-center" href="./checkout.html">انتقال همه به سبد خرید</a>
-</div>
+        <div class="d-flex justify-content-between">
+          <span>قیمت محصولات</span>
+          <span>۸۶،۰۰۰،۰۰۰ تومان</span>
+        </div>
+        <div class="d-flex justify-content-between line">
+          <span>هزینه بیمه</span>
+          <span>۷،۵۰۰،۰۰۰ تومان</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span>جمع کل</span>
+          <span>۹۳،۵۰۰،۰۰۰ تومان</span>
+        </div>
+        <div class="d-flex justify-content-between profit">
+          <span>سود شما</span>
+          <span>۱۴،۰۰۰،۰۰۰ تومان</span>
+        </div>
+      </div>
+
+      <a class="btn-move-all d-inline-block text-center" href="./checkout.html">انتقال همه به سبد خرید</a>
+    </div>
 
 
 

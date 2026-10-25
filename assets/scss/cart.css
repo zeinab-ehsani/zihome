@@ -8,6 +8,18 @@
   padding: 0;
 }
 
+.font14 {
+  font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
+}
+
+.font12 {
+  font-size: clamp(0.625rem, 0.5833rem + 0.1852vw, 0.75rem);
+}
+
+.font16 {
+  font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -65,7 +77,7 @@ section.main-cart > div.right-cart > div.btns > button {
 section.main-cart > div.right-cart > div.cart-item {
   border: 1px solid #D1D4D4;
   border-radius: 16px;
-  padding: 32px 32px;
+  padding: clamp(24px, 1rem + 2vw, 40px) clamp(16px, 0.5rem + 2vw, 32px);
 }
 section.main-cart > div.right-cart > div.cart-item > div > span {
   font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
@@ -121,7 +133,7 @@ section.main-cart > div.left-cart {
 section.main-cart > div.left-cart > div.top {
   border: 1px solid #D1D4D4;
   border-radius: 16px;
-  padding: 1rem 1rem;
+  padding: clamp(12px, 0.5rem + 1.5vw, 16px);
   font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
 }
 section.main-cart > div.left-cart > div.top > div > button.insurance-btn {
@@ -144,6 +156,12 @@ section.main-cart > div.left-cart > div.bottom {
   border: 1px solid #D1D4D4;
   border-radius: 16px;
   padding: 2rem 1rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.rounded16 {
+  border-radius: 16px;
 }
 
 .active {
@@ -202,4 +220,128 @@ section.main-cart > div.left-cart > div.bottom {
   border: 1px solid #de4c6a;
   border-radius: 8px;
   color: #de4c6a;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .cart-item {
+    gap: 0px !important;
+    padding-right: 0px !important;
+    flex-direction: column !important;
+    padding-left: 0px !important;
+  }
+  .cart-item > div > img {
+    width: 50% !important;
+  }
+  .btn-remove-insurance {
+    font-size: 12px !important;
+  }
+  .btn-move {
+    width: 90% !important;
+    border: 1px solid #0038BC !important;
+    border-radius: 8px;
+    margin: 0px auto;
+    margin-top: 16px;
+    padding: 10px 10px !important;
+  }
+  .top {
+    gap: 6px !important;
+    padding-bottom: 12px !important;
+    padding-top: 12px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cart-item > div > img {
+    width: 60% !important;
+  }
+  .right-cart {
+    width: 97% !important;
+  }
+  .main-cart {
+    flex-direction: column !important;
+  }
+  .cart-item {
+    padding-top: 12px !important;
+    padding: 20px 15px !important;
+  }
+  .left-cart {
+    width: 97% !important;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 767.98px) {
+  .cart-item > div > img {
+    width: 50% !important;
+  }
+  .main-cart {
+    flex-direction: column !important;
+  }
+  .cart-item {
+    padding-top: 12px !important;
+    padding: 20px 15px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .right-cart {
+    width: 97% !important;
+  }
+  .left-cart {
+    width: 97% !important;
+  }
+  .title2 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .cart-item {
+    gap: 0px !important;
+    flex-direction: column !important;
+  }
+  .cart-item > div {
+    gap: 0px !important;
+  }
+  .btn-move {
+    width: 90% !important;
+    border: 1px solid #0038BC !important;
+    border-radius: 8px;
+    margin: 0px auto;
+    margin-top: 16px;
+    padding: 10px 10px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cart-item > div > img {
+    width: 50% !important;
+  }
+  .main-cart {
+    flex-direction: column !important;
+  }
+  .cart-item {
+    padding-top: 12px !important;
+    padding: 20px 15px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .right-cart {
+    width: 97% !important;
+  }
+  .left-cart {
+    width: 97% !important;
+  }
+  .title2 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .cart-item {
+    gap: 0px !important;
+    flex-direction: column !important;
+  }
+  .cart-item > div {
+    gap: 0px !important;
+  }
+  .btn-move {
+    width: 90% !important;
+    border: 1px solid #0038BC !important;
+    border-radius: 8px;
+    margin: 0px auto;
+    margin-top: 16px;
+    padding: 10px 10px !important;
+  }
 }/*# sourceMappingURL=cart.css.map */
