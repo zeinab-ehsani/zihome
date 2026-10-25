@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart</title>
+  <link rel="stylesheet" href="./assets/node_modules/mdb-ui-kit/css/mdb.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/scss/cart.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body dir="rtl">
+  <div id="header-placeholder"></div>
+  <div class="title2">
+
+    <img class="ms-2" src="./assets/img/cart/basket-2.svg">سبدخرید
+
+  </div>
+
+
+  <section class="main-cart d-flex flex-row  ">
+    <div class="right-cart">
+
+      <div class="btns d-flex flex-row justify-content-between ">
+        <div>
+
+          <button class="cart-current">خرید فعلی شما</button><button class="cart-later">خرید بعدی شما</button>
+
+        </div>
+
+
+        <button class="delete-current"><img src="./assets/img/cart/Trash.svg">
+          حذف همه سبد خرید</button>
+      </div>
+      <div class="cart-item d-flex flex-row gap-5 justify-content-between">
+        <div class="d-flex flex-row">
+          <img src="./assets/img/cart/main pic.svg" alt="">
+          <span class="d-flex flex-column justify-content-between">
+            <span>یخچال فریزر اسمگ</span>
+            <span><img class="ms-2" src="./assets/img/cart/Rewards.svg">گارانتی ۱۸ ماهه گلدیران</span>
+            <span class="red"><span></span>قرمز</span>
+            <span><img class="ms-2" src="./assets/img/cart/Shipment.svg" alt="">موجوددرانبار</span>
+            <span class="d-flex flex-row justify-content-between p-2">
+              <img src="./assets/img/cart/Trash.svg">2
+              <img src="./assets/img/cart/plas.svg">
+            </span>
+          </span>
+        </div>
+
+        <button class="align-self-start btn-move">انتقال به خرید بعدی
+          <img class="me-4" src="./assets/img/cart/Path (3).svg">
+        </button>
+      </div>
+    </div>
+
+    <div class="left-cart d-flex flex-column gap-3">
+      <div class="top d-flex flex-column gap-3">
+        <div class="d-flex justify-content-between">
+          <span>بیمه به کالا اضافه شد</span>
+          <button class="insurance-btn">
+            نمایش جزئیات
+            <img class="me-1" src="./assets/img/cart/Path (3).svg">
+          </button>
+
+        </div>
+        <button class="btn-remove-insurance px-4 align-self-end"><img src="./assets/img/cart/Trashred.svg"> حذف بیمه  </button>
+      </div>
+      <div class="bottom">
+
+        <!-- <div class="cart-summary border rounded-2 p-3 bg-white" dir="rtl"> -->
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="small">قیمت محصولات</span>
+          <span class="small text-nowrap">۸۶,۰۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-1">
+          <span class="small">هزینه بیمه</span>
+          <span class="small text-nowrap">۷,۵۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="small">جمع کل</span>
+          <span class="small text-nowrap">۹۳,۵۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3 text-success">
+          <span class="small">سود شما</span>
+          <span class="small text-nowrap">۱۴,۰۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <button type="button" class="btn btn-danger btn-block w-100 shadow-0">
+          تأیید و ادامه خرید
+        </button>
+
+        <!-- </div> -->
+
+      </div>
+    </div>
+<div class="left-cart-buy d-none d-flex flex-column gap-3">
+  <div class="d-flex justify-content-between align-items-center">
+    <span class="bill-title">صورتحساب</span>
+    <span class="bill-count">۳ کالا</span>
+  </div>
+
+  <div class="payment-info">
+    <h6 class="text-center">اطلاعات پرداخت</h6>
+
+    <div class="d-flex justify-content-between">
+      <span>قیمت محصولات</span>
+      <span>۸۶،۰۰۰،۰۰۰ تومان</span>
+    </div>
+    <div class="d-flex justify-content-between line">
+      <span>هزینه بیمه</span>
+      <span>۷،۵۰۰،۰۰۰ تومان</span>
+    </div>
+    <div class="d-flex justify-content-between">
+      <span>جمع کل</span>
+      <span>۹۳،۵۰۰،۰۰۰ تومان</span>
+    </div>
+    <div class="d-flex justify-content-between profit">
+      <span>سود شما</span>
+      <span>۱۴،۰۰۰،۰۰۰ تومان</span>
+    </div>
+  </div>
+
+  <a class="btn-move-all d-inline-block text-center" href="./checkout.html">انتقال همه به سبد خرید</a>
+</div>
+
+
+
+  </section>
+
+
+  <div class="text-center shopping-empty d-none">
+    <img src="./assets/img/cart/shopping.svg" alt="">
+    <p class="mt-2">لیست خرید بعدی شما خالی است !</p>
+    <p>محصولاتی که به سبد خرید اضافه کرده‌اید، اگر در حال حاضر به آن‌ها نیازی ندارید، می‌توانید به لیست خرید بعدی منتقل
+      کنید.هر زمان که بخواهید، امکان بازگرداندن آن‌ها به سبد خرید و تکمیل سفارش وجود دارد.</p>
+  </div>
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+
+
+
+  <script src="./partials/header.js"></script>
+  <script src="./partials/footer.js"></script>
+  <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
+  <script src="./assets/js/cart.js"></script>
+
+</body>
+
+</html>

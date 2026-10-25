@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANYekan;
+}
+
+@font-face {
+  font-family: IRANYekan;
+  src: url(../font/IRANYekanXFaNum-Regular.woff2);
+}
+.time-line > div {
+  width: 85%;
+  padding-right: 0;
+  margin-top: 24px;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-right: 0.5rem;
+  padding-left: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::after {
+  float: right;
+  padding-left: 0.5rem;
+  padding-right: 0;
+  content: "/";
+}
+
+section.hero-contact {
+  background-image: url(../img/Contactus/contact-hero.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+section.hero-contact > h5 {
+  font-size: clamp(2rem, 1.273rem + 3.636vw, 4rem);
+  text-align: center;
+}
+section.hero-contact > img {
+  width: clamp(12.5rem, 10.2857rem + 11.0714vw, 20.25rem);
+}
+
+p.title-contact {
+  font-size: clamp(1rem, 0.818rem + 0.909vw, 1.5rem);
+  color: #DC2655;
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+p.paragraf-contact {
+  font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 9px;
+}
+
+form {
+  width: 85%;
+  margin: 0px auto;
+  flex-direction: row-reverse;
+  margin-top: 48px;
+}
+
+p.title-form {
+  font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+  font-weight: bold;
+}
+
+div.question-faq {
+  align-items: center;
+}
+div.question-faq > span {
+  font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
+}
+div.question-faq > span > a {
+  color: #DC2655;
+}
+div.question-faq > button {
+  padding: 8px 16px;
+  border: 1px solid #DC2655;
+  color: #DC2655;
+  border-radius: 8px;
+  background-color: white;
+  font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
+}
+
+.form-label {
+  font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+}
+
+.form-control,
+.form-select {
+  font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem) !important;
+  color: #A4A9AA !important;
+}
+
+div.add {
+  border: 1px dashed #C2C5C6;
+  text-align: center;
+  padding: 24px 32px;
+  border-radius: 0.5rem;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+input.add-file {
+  border: 1px solid #DC2655 !important;
+  width: 160px !important;
+  margin: 0px auto;
+  margin-bottom: 82px;
+}
+
+div.form-text {
+  font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+  color: #676F71;
+  margin-top: 82px;
+}
+
+section.map {
+  text-align: center;
+  border: 1px solid #D1D4D4;
+  border-radius: 16px;
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 88px;
+  padding: 48px 48px;
+}
+section.map > h5 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+section.map > p {
+  font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+  color: #3E4344;
+}
+section.map > p {
+  font-size: clamp(0.625rem, 0.5833rem + 0.1852vw, 0.75rem);
+  color: #676F71;
+}
+
+iframe {
+  border-radius: 12px;
+  width: 90%;
+}
+
+div.map-details {
+  font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
+  color: #3E4344;
+  gap: 0.5rem;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 32px;
+  border-bottom: 1px solid #E1E2E3;
+  padding-bottom: 1rem;
+}
+
+.pelatform {
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 24px;
+}
+.pelatform > span {
+  font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
+}
+
+@media screen and (min-width: 540px) and (max-width: 767.98px) {
+  .hero-contact {
+    height: 300px !important;
+  }
+  p.title-contact {
+    margin-top: 0px !important;
+  }
+  iframe {
+    height: 200px !important;
+    background-color: #A4A9AA;
+    color: #A4A9AA;
+  }
+  .pelatform > div > a {
+    margin-right: 0px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hero-contact {
+    height: 300px !important;
+  }
+  p.title-contact {
+    margin-top: 0px !important;
+  }
+  .map {
+    margin-top: 20px !important;
+    padding: 15px 12px !important;
+  }
+  iframe {
+    height: 180px !important;
+    background-color: #A4A9AA;
+    color: #A4A9AA;
+  }
+  .pelatform {
+    margin: 0px 0px !important;
+  }
+  .pelatform > div.media {
+    flex-wrap: nowrap;
+  }
+  .pelatform > div.media > a {
+    margin-right: 0px !important;
+  }
+  .pelatform > span {
+    margin-left: 5px !important;
+  }
+}/*# sourceMappingURL=Contactus.css.map */

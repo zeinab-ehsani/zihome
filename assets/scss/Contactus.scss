@@ -1,0 +1,272 @@
+@import "../../media";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: IRANYekan;
+
+}
+
+@font-face {
+    font-family: IRANYekan;
+    src: url(../font/IRANYekanXFaNum-Regular.woff2);
+}
+
+$color-red: #DC2655;
+$font-12: clamp(0.625rem, 0.5833rem + 0.1852vw, 0.75rem);
+$font-14: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
+$font-16: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+
+.time-line {
+    >div {
+        width: 85%;
+        padding-right: 0;
+        margin-top: 24px;
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::after {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+    content: "/";
+}
+
+section.hero-contact {
+    background-image: url(../img/Contactus/contact-hero.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    >h5 {
+        font-size: clamp(2rem, 1.273rem + 3.636vw, 4rem);
+        text-align: center;
+    }
+
+    >img {
+        width: clamp(12.5rem, 10.2857rem + 11.0714vw, 20.25rem)
+    }
+}
+
+p.title-contact {
+    font-size: clamp(1rem, 0.818rem + 0.909vw, 1.5rem);
+    color: $color-red;
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+p.paragraf-contact {
+    font-size: $font-16;
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 9px;
+}
+
+form {
+    width: 85%;
+    margin: 0px auto;
+    flex-direction: row-reverse;
+    margin-top: 48px;
+}
+
+p.title-form {
+    font-size: $font-16;
+    font-weight: bold;
+}
+
+div.question-faq {
+    align-items: center;
+
+    >span {
+        font-size: $font-14;
+
+        >a {
+            color: $color-red;
+        }
+    }
+
+    >button {
+        padding: 8px 16px;
+        border: 1px solid $color-red;
+        color: $color-red;
+        border-radius: 8px;
+        background-color: white;
+        font-size: $font-14;
+    }
+
+
+}
+
+.form-label {
+    font-size: $font-16;
+}
+
+.form-control,
+.form-select {
+    font-size: $font-14 !important;
+    color: #A4A9AA !important;
+}
+
+div.add {
+    border: 1px dashed #C2C5C6;
+    text-align: center;
+    padding: 24px 32px;
+    border-radius: 0.5rem;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+input.add-file {
+    border: 1px solid $color-red !important;
+    width: 160px !important;
+    margin: 0px auto;
+    margin-bottom: 82px;
+}
+
+div.form-text {
+    font-size: $font-16;
+    color: #676F71;
+    margin-top: 82px;
+}
+
+.send {
+    // background-color: $color-red !important;
+    // color: white !important;
+    // padding: 8px 16px !important;
+
+
+}
+
+section.map {
+    text-align: center;
+    border: 1px solid #D1D4D4;
+    border-radius: 16px;
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 88px;
+    padding: 48px 48px;
+
+    >h5 {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    >p {
+        font-size: $font-16;
+        color: #3E4344;
+    }
+
+    >p {
+        font-size: $font-12;
+        color: #676F71;
+    }
+}
+
+iframe {
+    border-radius: 12px;
+    width: 90%;
+}
+
+div.map-details {
+    font-size: $font-14;
+    color: #3E4344;
+    gap: 0.5rem;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 32px;
+    border-bottom: 1px solid #E1E2E3;
+    padding-bottom: 1rem;
+
+}
+
+.pelatform {
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 24px;
+
+    >span {
+        font-size: $font-14;
+    }
+}
+
+@include media(540) {
+    .hero-contact {
+        height: 300px !important;
+    }
+
+    p.title-contact {
+        margin-top: 0px !important;
+    }
+
+    iframe {
+        height: 200px !important;
+        background-color: #A4A9AA;
+        color: #A4A9AA;
+    }
+
+    .pelatform {
+        >div {
+            >a {
+                margin-right: 0px !important;
+            }
+        }
+
+    }
+}
+
+
+@include media(0) {
+    .hero-contact {
+        height: 300px !important;
+    }
+
+    p.title-contact {
+        margin-top: 0px !important;
+    }
+
+    .map {
+        margin-top: 20px !important;
+        padding: 15px 12px !important;
+    }
+
+    iframe {
+        height: 180px !important;
+        background-color: #A4A9AA;
+        color: #A4A9AA;
+    }
+
+    .pelatform {
+        margin: 0px 0px !important;
+        >div.media {
+            flex-wrap: nowrap;
+            >a {
+                margin-right: 0px !important;
+            }
+
+        }
+
+        >span {
+            margin-left: 5px !important;
+        }
+    }
+
+}

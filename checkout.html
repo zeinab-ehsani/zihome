@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+
+    <link rel="stylesheet" href="./assets/node_modules/mdb-ui-kit/css/mdb.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="stylesheet" href="./assets/scss/checkout.css">
+</head>
+
+<body dir="rtl">
+    <div id="header-placeholder"></div>
+
+    <div class="container parentall d-flex gap-4 py-4">
+
+        <div class="flex-fill  d-flex flex-column gap-3 ">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h6 class=" mb-0">آدرس تحویل سفارش</h6>
+                <a href="./cart.html" class="small text-muted text-decoration-none">
+                    بازگشت به سبد خرید
+                    <img class="me-1" src="./assets/img/checkout/arrow left.svg">
+                </a>
+            </div>
+
+            <button id="addAddressBtn" class="btn btn-outline-danger rounded-3 w-100" data-mdb-ripple-init
+                data-mdb-modal-init data-mdb-target="#modal1">
+                + برای تحویل سفارش، آدرس خود را ثبت کنید
+            </button>
+            <div class="addres1 d-none d-flex flex-row justify-content-between" id="address">
+                <div class="d-flex flex-column gap-2">
+                    <span class="font16"><img src="./assets/img/checkout/marker-pin.svg" style="width: 24px;">استان
+                        تهران ،شهر تهران </span>
+                    <span class="font16 pe-4 gray1">بلوار فردوس غرب ، بهارشمالی،کوی نگین ،پلاک۲ واحد۱</span>
+                    <span class="font16 pe-4 gray1"> ۱۷۶۵۶۷۸۹۰کدپستی</span>
+                    <span class="font16 pe-4 gray1">۰۹۱۲۳۴۵۶۷شماره تماس</span>
+                </div>
+                <button class="align-top align-self-start "><img class="ms-3"
+                        src="./assets/img/checkout/bluepen.svg">ویرایش</button>
+            </div>
+
+
+            <div id="shippingType" class="disabled-step d-flex gap-3 ">
+                <label id="expressinput" class="card  p-3 flex-fill ">
+                    <div class="d-flex align-items-center gap-2">
+                        <span> <img src="./assets/img/checkout/marker-pin.svg" style="width: 24px;">
+                            ارسال اکسپرس و سریع</span>
+                    </div>
+                    <input id="" class=" align-self-end" type="radio" name="shipping" value="express">
+                    <small class="text-muted">در کمترین زمان محصولات تحویل می‌شود</small>
+                </label>
+
+                <label id="standard" class="card  p-3 flex-fill">
+                    <div class="d-flex align-items-center gap-2">
+                        <span> <img src="./assets/img/checkout/car.svg" style="width: 24px;">
+                            ارسال عادی</span>
+                    </div>
+                    <input id="standard-delivery" class=" align-self-end" type="radio" name="shipping" value="normal">
+
+                    <small class="text-muted">در کمترین زمان محصولات تحویل می‌شود</small>
+                </label>
+            </div>
+
+            <div id="productsBox" class="disabled-step  shadow-0 border">
+                <div class="card-body p-4 d-flex flex-column gap-3">
+
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/img/checkout/car2.svg">
+                        <span>ارسال محصولات</span>
+                    </div>
+
+                    <div class="d-flex flex-column gap-2 align-items-start">
+                        <img class="product-img" src="./assets/img/checkout/main pic.svg" alt="یخچال">
+                        <small class="text-muted">رنگ</small>
+                        <span class="badge rounded-pill bg-light text-muted d-inline-flex align-items-center gap-2">
+                            <span class="color-dot rounded-circle bg-danger"></span>
+                            قرمز
+                        </span>
+                        <div
+                            class="counter d-flex justify-content-between align-items-center bg-light border rounded-3 px-3 py-2">
+                            <button class="btn btn-link p-0"><img src="./assets/img/cart/trash.svg"></button>
+
+                            <span>۲</span>
+                            <button class="btn btn-link p-0"><img src="./assets/img/checkout/plas.svg"></button>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="old-date">
+                        <div class="">
+                            <p class="text-muted mb-1">انتخاب روز ارسال</p>
+                            <small id="error"><img src="./assets/img/checkout/Warning.svg"> انتخاب آدرس، نوع ارسال مشخص
+                                می‌شود</small>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <p class="text-muted mb-1">انتخاب ساعت ارسال</p>
+                            <small id="error" class=""><img src="./assets/img/checkout/Warning.svg">با انتخاب آدرس، ساعت
+                                ارسال مشخص
+                                می‌شود</small>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <p class="text-muted mb-1">مجموع هزینه ارسال</p>
+                            <small id="error" class=""><img src="./assets/img/checkout/Warning.svg">با انتخاب آدرس،
+                                هزینه ارسال مشخص
+                                می‌شود</small>
+                        </div>
+                    </div>
+                    <div class="send-box d-none">
+                        <p class="font16"><img class="ms-2" src="./assets/img/checkout/calendar.svg" alt="">انتخاب
+                            روزارسال</p>
+                        <div class="date">
+                            <button class="day font14">
+                                چهارشنبه
+                                <br>
+                                06
+                                <br>
+                                فروردین
+                            </button>
+                            <button class="day font14">
+                                پنجشنبه
+                                <br>
+                                07
+                                <br>
+                                فروردین
+                            </button>
+
+                            <button class="day font14">
+                                جمعه
+                                <br>
+                                08
+                                <br>
+                                فروردین
+                            </button>
+
+                            <button class="day font14">
+                                شنبه
+                                <br>
+                                09
+                                <br>
+                                فروردین
+                            </button>
+
+                            <button class="day font14">
+                                یکشنبه
+                                <br>
+                                10
+                                <br>
+                                فروردین
+                            </button>
+                            <button class="day font14">
+                                یکشنبه
+                                <br>
+                                10
+                                <br>
+                                فروردین
+                            </button>
+
+                            <button class="day font14">
+                                یکشنبه
+                                <br>
+                                10
+                                <br>
+                                فروردین
+                            </button>
+
+
+
+
+
+                        </div>
+                        <hr>
+                        <p class="font16"><img class="ms-2" src="./assets/img/checkout/clock-timer-dots-line.svg"
+                                alt=""> انتخاب ساعت ارسال</p>
+                        <div class="d-flex flex-row justify-content-between">
+                            <label name="clock" class="" for="7">
+                                <input name="clock" type="radio" id="7">
+                                7الی9
+
+                            </label>
+                            <span>تکمیل</span>
+
+                        </div>
+                        <hr>
+                        <label name="clock" class="" for="9">
+                            <input name="clock" type="radio" id="9">
+                            9الی12
+                        </label>
+                        <hr>
+                        <label name="clock" class="" for="12">
+                            <input name="clock" type="radio" id="12">
+                            12الی15
+                        </label>
+                        <hr>
+                        <label name="clock" class="" for="15">
+                            <input name="clock" type="radio" id="15">
+                            15الی18
+                        </label>
+                        <hr>
+                        <span class="font16 mb-2">مجموع هزینه ارسال</span><br>
+                        <span class="gray1 font14">75.0000تومان</span>
+
+                    </div>
+                    <div class="express d-none">
+                        <p class="font16"><img class="ms-2" src="./assets/img/checkout/clock-timer-dots-line.svg"
+                                alt=""> انتخاب ساعت ارسال</p>
+                        <div class="d-flex flex-row justify-content-between">
+                            <label name="clock" class="font16" for="7">
+                                <input name="clock" type="radio" id="7">
+                                امروز ۰۷ اردیبهشت - ۷ الی ۹
+                            </label>
+                            <span class="complete-order-express">تکمیل</span>
+
+                        </div>
+                        <hr>
+                        <label name="clock" class="font16" for="9">
+                            <input name="clock" type="radio" id="9">
+                            امروز ۰۷ اردیبهشت - ۹ الی ۱۲
+                        </label>
+                        <hr>
+                        <label name="clock" class="font16" for="12">
+                            <input name="clock" type="radio" id="12">
+                            امروز ۰۷ اردیبهشت - ۱۲ الی ۱۵ </label>
+                        <hr>
+                        <label name="clock" class="font16" for="15">
+                            <input name="clock" type="radio" id="15">
+                            امروز ۰۷ اردیبهشت - ۱۵ الی ۱۸ </label>
+                        <hr>
+                        <span class="font16 mb-2">مجموع هزینه ارسال</span><br>
+                        <span class="gray1 font14">75.0000تومان</span>
+
+                    </div>
+
+                </div>
+            </div>
+            <section class="main-payment d-none">
+
+                <p>انتخاب روش پرداخت</p>
+                <div>
+                    <span class="d-flex flex-row align-middle gap-2">
+
+                        <input type="radio" name="payment">
+                        <img src="./assets/img/checkout/card.svg" alt="">
+                        <label for="">پرداخت اینترنتی</label>
+
+                    </span>
+                    <hr>
+                    <span class="d-flex flex-row align-middle gap-2">
+
+                        <input type="radio" name="payment">
+                        <img src="./assets/img/checkout/card.svg" alt="">
+                        <label for="">پرداخت درب منزل</label>
+
+                    </span>
+                </div>
+                <p class="mt-4">کدتخفیف و هدایا</p>
+                <div class="card shadow-0 border gift  p-4">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <label class="form-label small">کد تخفیف</label>
+                            <div class="input-group border ps-2 p-1 align-items-center">
+                                <input type="text" class="form-control font14 border-0 shadow-0 small"
+                                    placeholder="کد مورد نظر خود را وارد کنید.">
+                                <button type="button" class="btn btn-outline-danger btn-sm  px-4 pb-2">ثبت</button>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label small">کارت هدیه</label>
+                            <div class="input-group border ps-2 rounded-3 p-1  align-items-center">
+                                <input type="text" class="form-control font14  border-0 shadow-0 small"
+                                    placeholder="کد مورد نظر خود را وارد کنید.">
+                                <button type="button"
+                                    class="btn btn-outline-danger btn-sm rounded-2 px-4 pb-2">ثبت</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <h6 class="mb-3 mt-4">سفارش در یک نگاه</h6>
+
+                <div class="card shadow-0 border  p-4">
+                    <div class="d-flex justify-content-between align-items-center small">
+                        <span class="d-flex align-items-center gap-2">
+                            <img src="./assets/img/checkout/car2.svg" style="width: 24px;">
+                            ارسال عادی
+                        </span>
+
+                        <span class="d-flex align-items-center gap-2">
+                            <img src="./assets/img/checkout/calendar.svg" style="width: 24px;">
+                            پنج شنبه ۰۷ فروردین - بازه زمانی ۹ تا ۱۲
+                        </span>
+
+                        <span class="d-flex align-items-center gap-2">
+                            <img src="./assets/img/checkout/card.svg" style="width: 24px;">
+                            مبلغ قابل پرداخت: ۹۳،۵۷۵،۰۰۰ تومان
+                        </span>
+                    </div>
+
+                    <hr class="my-3">
+
+
+
+                    <button class="btn btn-link text-primary text-decoration-none small p-0" data-mdb-collapse-init
+                        data-mdb-target="#orderDetails" aria-expanded="false">
+                        نمایش جزئیات سفارش
+                        <img class="me-1" src="./assets/img/checkout/arrow down (1).svg">
+                    </button>
+
+                    <div class="collapse mt-3" id="orderDetails">
+                        <div class="d-flex flex-column gap-3 small">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="d-flex align-items-center gap-2">
+                                    <img src="./assets/img/checkout/main pic.svg" style="width: 48px;" alt="یخچال">
+                                    یخچال فریزر اسمگ - قرمز
+                                </span>
+                                <span class="text-muted">۲ عدد</span>
+                                <span>۸۶،۰۰۰،۰۰۰ تومان</span>
+                            </div>
+
+                            <hr class="my-0">
+
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">آدرس تحویل</span>
+                                <span>تهران، خ پیروزی، خ صد دستگاه، کوچه قربانی، پلاک ۳ واحد ۳</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">تحویل گیرنده</span>
+                                <span>زهرا جلوداری - ۰۹۱۲۳۴۵۶۷۸۹</span>
+                            </div>
+
+                            <hr class="my-0">
+
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">هزینه بیمه</span>
+                                <span>۷،۵۰۰،۰۰۰ تومان</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">هزینه ارسال</span>
+                                <span>۷۵،۰۰۰ تومان</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between text-success">
+                                <span>سود شما</span>
+                                <span>۱۴،۰۰۰،۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="left-cart d-flex flex-column gap-3">
+            <div class="d-flex justify-content-between">
+                <span class="">صورتحساب</span>
+                <small class="text-muted">۳ کالا</small>
+            </div>
+
+            <div id="billBox" class="disabled-step d-flex flex-column gap-3">
+                <div class="card shadow-0 border p-3 d-flex flex-column gap-2 small">
+                    <h6 class="text-center">اطلاعات پرداخت</h6>
+                    <div class="d-flex justify-content-between"><span>قیمت محصولات</span><span>۸۶،۰۰۰،۰۰۰ تومان</span>
+                    </div>
+                    <div class="d-flex justify-content-between"><span>هزینه بیمه</span><span>۷،۵۰۰،۰۰۰ تومان</span>
+                    </div>
+                    <div class="d-flex justify-content-between text-success"><span>سود شما</span><span>۱۴،۰۰۰،۰۰۰
+                            تومان</span></div>
+                    <div class="d-flex justify-content-between"><span>جمع کل</span><span>۹۳،۵۰۰،۰۰۰ تومان</span></div>
+                    <hr>
+                    <div class="d-flex justify-content-between"><span class="d-block">هزینه ارسال</span></div>
+                    <span class="method"> <img style="width: 24px;"
+                            src="./assets/img/checkout/Delivery, Truck, Fast.svg">
+                    </span>
+                    <div class="d-flex justify-content-between"><span>جمع کل</span><span>۹۳،۵۷۵،۰۰۰ تومان</span></div>
+                </div>
+
+                <button id="continueBtn" class="btn btn-danger  w-100">تأیید و ادامه خرید</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- start page finaly -->
+    <div class="container finaly d-flex flex-column gap-3 py-4 d-none">
+
+        <div class="card shadow-0 border ">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex align-items-center gap-2 text-danger">
+                        <img src="./assets/img/checkout/z.svg" style="width: 24px;" alt="">
+                        <span>پرداخت شما ناموفق بود!</span>
+                    </div>
+
+                    <div class="d-flex flex-column gap-2 small">
+                        <span class="text-muted">سفارش شما ثبت شده و در انتظار صف پرداخت است</span>
+                        <span>سفارش شما در صورت عدم پرداخت نهایت تا ۲۴ ساعت آینده به صورت خودکار لغو خواهد شد.</span>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <a href="./index.html" class="btn btn-outline-danger px-4">بازگشت به صفحه اصلی</a>
+                        <button type="button" class="btn btn-danger px-4 shadow-0" data-mdb-dismiss="modal" data-mdb-ripple-init
+                            data-mdb-modal-init data-mdb-target="#modal7">پرداخت مجدد</button>
+
+                    </div>
+                </div>
+
+                <img src="./assets/img/checkout/flower.svg"  alt="">
+            </div>
+        </div>
+
+        <div class="card shadow-0 border p-4">
+            <h6 class="mb-4">جزئیات پرداخت</h6>
+
+            <div class="d-flex justify-content-between small mb-4">
+                <span>
+                    <span class="text-muted">شماره پیگیری سفارش:</span>
+                    ۱۲۳۴۵۶۷۸۸۵۴
+                </span>
+                <span>
+                    <span class="text-muted">شیوه پرداخت:</span>
+                    پرداخت آنلاین (بانک سامان)
+                </span>
+                <span>
+                    <span class="text-muted">وضعیت پرداخت:</span>
+                    در انتظار واریز وجه
+                </span>
+                <span>
+                    <span class="text-muted">تاریخ:</span>
+                    ۷ اردیبهشت ۱۴۰۴
+                </span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 small">
+                <img src="./assets/img/checkout/Warning.svg" style="width: 20px;" alt="">
+                در صورتی که مبلغی از حساب شما کسر شده باشد نهایت تا ۷۲ ساعت آینده به حساب شما عودت داده خواهد شد.
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- end page finaly -->
+    <!-- start modal1 -->
+
+    <div class="modal 	modal-lg fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font16" id="exampleModalLabel">آدرس های شما</h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal1 d-flex flex-column ">
+                    <div class="addres1">
+                        <div class="d-flex flex-column gap-2">
+                            <span class="font16"><img src="./assets/img/checkout/marker-pin.svg"
+                                    style="width: 24px;">استان تهران ،شهر تهران </span>
+                            <span class="font16 pe-4 gray1">بلوار فردوس غرب ، بهارشمالی،کوی نگین ،پلاک۲ واحد۱</span>
+                            <span class="font16 pe-4 gray1"> ۱۷۶۵۶۷۸۹۰کدپستی</span>
+                            <span class="font16 pe-4 gray1">۰۹۱۲۳۴۵۶۷شماره تماس</span>
+                        </div>
+                        <button class="align-top"><img class="ms-3"
+                                src="./assets/img/checkout/bluepen.svg">ویرایش</button>
+                    </div>
+                    <div class="addres1">
+                        <div class="d-flex flex-column gap-2">
+                            <span class="font16"><img src="./assets/img/checkout/marker-pin.svg"
+                                    style="width: 24px;">استان تهران ،شهر تهران </span>
+                            <span class="font16 pe-4 gray1">بلوار فردوس غرب ، بهارشمالی،کوی نگین ،پلاک۲ واحد۱</span>
+                            <span class="font16 pe-4 gray1"> ۱۷۶۵۶۷۸۹۰کدپستی</span>
+                            <span class="font16 pe-4 gray1">۰۹۱۲۳۴۵۶۷شماره تماس</span>
+                        </div>
+                        <button class="align-top"><img class="ms-3"
+                                src="./assets/img/checkout/bluepen.svg">ویرایش</button>
+                    </div>
+                    <div class="addres1 border-danger">
+                        <div class="d-flex flex-column gap-2">
+                            <span class="font16"><img src="./assets/img/checkout/marker-pin.svg"
+                                    style="width: 24px;">استان تهران ،شهر تهران </span>
+                            <span class="font16 pe-4 gray1">بلوار فردوس غرب ، بهارشمالی،کوی نگین ،پلاک۲ واحد۱</span>
+                            <span class="font16 pe-4 gray1"> ۱۷۶۵۶۷۸۹۰کدپستی</span>
+                            <span class="font16 pe-4 gray1">۰۹۱۲۳۴۵۶۷شماره تماس</span>
+                        </div>
+                        <button class="align-top"><img class="ms-3"
+                                src="./assets/img/checkout/bluepen.svg">ویرایش</button>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="new-address" data-mdb-ripple-init data-mdb-modal-init
+                        data-mdb-target="#modal2">
+                        <img class="ms-3" src="./assets/img/checkout/redplus.svg" alt="">افزودن
+                        آدرس جدید </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal1 -->
+
+    <!-- start modal2 -->
+    <div class="modal 	modal-lg fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font16" id="exampleModalLabel">افزودن آدرس جدید</h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal2 d-flex flex-column ">
+                    <div class="d-flex flex-column gap-3">
+
+                        <button class="btn  rounded-3 w-100 py-3   btn-map " data-mdb-ripple-init data-mdb-modal-init
+                            data-mdb-target="#modal3">
+                            انتخاب آدرس با نقشه
+                        </button>
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label small text-black">استان <span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select font12">
+                                    <option class="font12 gray1">همه موارد</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label small text-black">شهر <span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select font12">
+                                    <option class="font14 gray1">همه موارد</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label small text-black">خیابان و کوچه <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control font14 gray1" placeholder="خیابان ....">
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label small text-black">پلاک <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control font14 gray1" placeholder="مثلا ۲">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label small text-black">واحد</label>
+                                <input type="text" class="form-control font14 gray1" placeholder="مثلا ۲">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label small text-black">کدپستی <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control font12" placeholder="۱۰ رقمی باشد" maxlength="10">
+                        </div>
+
+                        <button class="btn btn-end  w-100 py-2 shadow-0">تایید و ادامه</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- end modal2 -->
+    <!-- start modal3 -->
+    <div class="modal 	modal-lg fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font16" id="exampleModalLabel"> آدرس جدید</h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal3 d-flex flex-column ">
+                    <div class="d-flex flex-column gap-3">
+
+                        <button class="btn  rounded-3 w-100 py-1 text-end shadow-0 border  btn-map ">
+                            <img src="./assets/img/checkout/Search.svg">
+                            جست و جوی آدرس
+                        </button>
+                        <div class="map w-100 text-center">
+                            <iframe class="rounded-2"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62243.94159078485!2d50.824499125336054!3d34.62818886140519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f93bb6eb88ce195%3A0xcc35bec1c2604470!2sQom%2C%20Qom%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1792397958551!5m2!1sen!2s"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+
+
+
+                        <div class="d-flex flex-row w-100 gap-3 justify-content-between">
+                            <button class="btn btn-endright   py-2 shadow-0">انصراف</button>
+                            <button class="btn btn-endleft   py-2 shadow-0" data-mdb-ripple-init data-mdb-modal-init
+                                data-mdb-target="#modal4">تایید و ادامه</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end modal3 -->
+
+    <!-- start modal4 -->
+    <div class="modal px-4 	modal-lg fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font16" id="exampleModalLabel">تایید اطلاعات آدرس</h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 modal4 d-flex flex-column ">
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- <button class="btn  rounded-3 w-100 py-1 text-end shadow-0 border  btn-map ">
+                            <img src="./assets/img/checkout/Search.svg">
+                            جست و جوی آدرس
+                        </button> -->
+                        <div class="map w-100 text-center">
+                            <iframe class="rounded-3"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62243.94159078485!2d50.824499125336054!3d34.62818886140519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f93bb6eb88ce195%3A0xcc35bec1c2604470!2sQom%2C%20Qom%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1792397958551!5m2!1sen!2s"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+
+
+                        <div class="d-flex flex-column gap-3">
+
+                            <div class="d-flex align-items-center gap-2 border rounded-3 px-3 py-2">
+                                <img src="./assets/img/checkout/marker-pin.svg" style="width: 24px;">
+                                <span class="flex-fill">استان تهران ،شهر تهران ،خ پیروزی ،خ صد دستگاه ،کوچه قربانی ،پلاک
+                                    ۳ واحد ۳</span>
+                                <button type="button" class="btn btn-link p-0" data-mdb-ripple-init data-mdb-modal-init
+                                    data-mdb-target="#modal5">
+                                    <img src="./assets/img/checkout/bluepen.svg" style="width: 24px;">
+                                </button>
+                            </div>
+
+                            <div class="d-flex flex-column gap-2">
+                                <span>تحویل گیرنده چه کسی است ؟</span>
+                                <div class="d-flex align-items-center gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="receiver" id="receiverSelf"
+                                            checked>
+                                        <label class="form-check-label" for="receiverSelf">تحویل به خودم</label>
+                                    </div>
+                                    <div class="form-check d-flex flex-row">
+                                        <label class="form-check-label" for="receiverOther">تحویل به شخص دیگر</label>
+                                                                                <input class="form-check-input" type="radio" name="receiver" id="receiverOther">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="otherReceiverBox" class="row g-3 d-none ">
+                                <div class="col-6">
+                                    <label class="form-label text-black">نام و نام خانوادگی تحویل گیرنده <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control font14 gray1" placeholder="مثلا ساره حسینی">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label text-black">شماره همراه <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control font14 gray1 text-end" placeholder="مثلا ۰۹۱۲۳۴۵۶۷۸" maxlength="11">
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <button id="saveaddress" class="btn btn-danger flex-fill py-2"
+                                    data-mdb-dismiss="modal">ذخیره
+                                    آدرس</button>
+                                <button class="btn btn-outline-danger flex-fill py-2"
+                                    data-mdb-dismiss="modal">انصراف</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end modal4 -->
+    <!-- start modal5 -->
+    <div class="modal 	modal-lg fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font16" id="exampleModalLabel"> ویرایش آدرس </h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal3 d-flex flex-column ">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label text-black">نام و نام خانوادگی تحویل گیرنده <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control font14 gray1" value="زهرا جلوداری">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label text-black ">شماره همراه <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control text-end  font14 gray1" value="۰۹۱۲۳۴۵۶۷۸" maxlength="11">
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label text-black">استان <span class="text-danger">*</span></label>
+                                <select class="form-select  font14 gray1">
+                                    <option class="font14 gray1">همه موارد</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label text-black ">شهر <span class="text-danger">*</span></label>
+                                <select class="form-select font14 gray1">
+                                    <option class="font14 gray1">همه موارد</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label text-black">خیابان و کوچه <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control font14 gray1" value="خ پیروزی، خ صد دستگاه ، کوچه قربانی">
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label text-black">پلاک <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control font14 gray1" value="۲">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label text-black">واحد</label>
+                                <input type="text" class="form-control font14 gray1" value="۲">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label text-black">کدپستی <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control font14 gray1" value="۱۷۶۵۶۷۸۹۰۰" maxlength="10">
+                        </div>
+
+                        <button class="btn btn-danger w-100 py-2" data-mdb-dismiss="modal" data-mdb-ripple-init
+                            data-mdb-modal-init data-mdb-target="#modal6">ویرایش و ادامه</button>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- end modal5 -->
+
+    <!-- startmodal6 -->
+    <div class="modal 	modal-lg fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font16" id="exampleModalLabel"> آدرس های شما</h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal3 d-flex flex-column ">
+                    <div class="d-flex flex-column align-items-center">
+
+                        <div class="d-flex flex-column align-items-center gap-3 py-5">
+                            <img src="./assets/img/checkout/emptyaddress.svg" style="width: 100px;" alt="">
+                            <span class="small">هنوز آدرسی ثبت نکرده اید</span>
+                        </div>
+
+                        <hr class="w-100 my-0">
+
+                        <button class="btn btn-link text-danger text-decoration-none align-self-start p-3"
+                            data-mdb-toggle="modal" data-mdb-target="#newAddressModal">
+                            <img src="./assets/img/checkout/redplus.svg" class="ms-2" style="width: 20px;">
+                            افزودن آدرس جدید
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- endmodal6 -->
+    <!-- start modal7 -->
+
+    
+    <div class="modal 	 fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-3 py-5">
+
+  <img src="./assets/img/checkout/Verified Check.svg" style="width: 56px;" alt="">
+
+  <span class="text-warning small">تراکنش نامشخص است.</span>
+
+  <p class="small mb-0">لطفا شرایط پرداخت و موجودی حساب خود را بررسی کنید.</p>
+
+  <button type="button" class="btn btn-warning text-white w-75 py-2 mt-2 shadow-0"data-mdb-dismiss="modal" data-mdb-ripple-init
+                            data-mdb-modal-init data-mdb-target="#modal8">
+    ارسال مجدد کد
+  </button>
+
+</div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- end modal7 -->
+
+    <!-- start modal8 -->
+
+    <div class="modal 	 fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-3 py-5">
+
+ <div class="modal-body d-flex flex-column align-items-center text-center gap-3 py-5">
+
+  <img src="./assets/img/checkout/greentick.svg" style="width: 56px;" alt="">
+
+  <span class="text-success small">پرداخت شما با موفقیت انجام شد.</span>
+
+  <p class="small mb-0">تراکنش خرید شما با موفقیت انجام شد ، از اعتماد شما سپاسگزاریم.</p>
+
+  <a href="./index.html" class="btn btn-success w-75 py-2 mt-2">
+    بازگشت به سایت پذیرنده (<span id="redirectTimer">۰۱:۵۵</span>)
+  </a>
+
+</div>
+
+</div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- end modal8 -->
+
+    <div id="footer-placeholder"></div>
+
+
+
+    <script src="./partials/header.js"></script>
+    <script src="./partials/footer.js"></script>
+        <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
+
+    <script src="./assets/js/checkout.js"></script>
+
+
+</body>
+
+</html>

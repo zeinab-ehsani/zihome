@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.3.0/mdb.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="./assets/node_modules/mdb-ui-kit/css/mdb.min.css">
+
+
+  <!-- <link rel="stylesheet" href="assets/node_modules/mdb-ui-kit/css/mdb.min.css"> -->
+  <link rel="stylesheet" href="assets/node_modules/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./assets/scss/filter2.css">
+
+  <title>filter2</title>
+</head>
+
+<body dir="rtl">
+  <div id="header-placeholder"></div>
+    <nav data-mdb-navbar-init class="navbar navbar-expand-lg shadow-0 time-line  ">
+        <div class="container-fluid mb-4 mt-1">
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item "><a href="./index.html">زی هوم</a></li>
+
+                    <li class="breadcrumb-item " aria-current="page"><a href="#" class="">
+                            خانه وآشپزخانه
+
+                        </a></li>
+                    <li class="breadcrumb-item  " aria-current="page"><a href="#" class="text-black">
+                            لوازم برقی
+
+                        </a></li>
+                    
+                </ol>
+            </nav>
+        </div>
+    </nav>
+
+
+
+<section class="category-section" dir="rtl">
+  <h6 class="category-title">یخچال فریزر</h6>
+
+  <div class="row g-4">
+
+    <div class="col-6 col-md-3">
+      <button type="button" class="category-card active" data-category="fridge">
+        <img src="./assets/img/filter/01.png" alt="یخچال فریزر">
+        <span >
+                  <a class="text-black" href="./filter.html">          یخچال فریزر
+</a>
+
+        
+        </span>
+      </button>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <button type="button" class="category-card" data-category="cookware">
+        <img src="./assets/img/filter/02.png" alt="سرویس قابلمه">
+        <span>سرویس قابلمه</span>
+      </button>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <button type="button" class="category-card" data-category="cutlery">
+        <img src="./assets/img/filter/03.png" alt="قاشق چنگال و کارد">
+        <span>قاشق چنگال و کارد</span>
+      </button>
+    </div>
+
+    <div class="col-6 col-md-3 product">
+      <button type="button" class="category-card category-more h-100" data-category="other">
+        <span>محصولات دیگر</span>
+      </button>
+    </div>
+
+  </div>
+</section>
+    <div class="main d-flex flex-row">
+
+
+    <div class="filter d-none">
+     <aside class="filter-card" dir="rtl">
+
+  <div class="filter-head">
+    <h6 class="mb-0">فیلترها</h6>
+    <i class="far fa-window-maximize"></i>
+  </div>
+
+  <div class="applied-filters">
+    <div class="applied-head">
+      <span>فیلترهای اعمال شده</span>
+      <button type="button" class="clear-all">× حذف همه</button>
+    </div>
+    <div class="filter-tag">
+      <span>قیمت: از 1,000,000 تا 15,000,000</span>
+      <button type="button" class="tag-close">×</button>
+    </div>
+  </div>
+
+  <div class="filter-item">
+    <button type="button" class="filter-toggle"
+            data-mdb-collapse-init
+            data-mdb-toggle="collapse"
+            data-mdb-target="#cat"
+            aria-expanded="false" aria-controls="cat">
+      <span>دسته بندی</span>
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="collapse" id="cat">
+      <div class="filter-body">
+        <label><input type="checkbox"> یخچال</label>
+        <label><input type="checkbox"> ماشین لباسشویی</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-item">
+    <button type="button" class="filter-toggle"
+            data-mdb-collapse-init
+            data-mdb-toggle="collapse"
+            data-mdb-target="#price"
+            aria-expanded="true" aria-controls="price">
+      <span>محدوده قیمت</span>
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="collapse show" id="price">
+      <div class="filter-body">
+        <input type="range" class="form-range" min="0" max="15000000" id="priceRange">
+
+        <label class="price-label">محدودیت قیمت از</label>
+        <div class="price-input">
+          <input type="text" value="1,000,000" id="minPrice">
+          <span>تومان</span>
+        </div>
+
+        <label class="price-label">محدودیت قیمت تا</label>
+        <div class="price-input">
+          <input type="text" value="15,000,000" id="maxPrice">
+          <span>تومان</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-item">
+    <button type="button" class="filter-toggle"
+            data-mdb-collapse-init
+            data-mdb-toggle="collapse"
+            data-mdb-target="#brand"
+            aria-expanded="false" aria-controls="brand">
+      <span>برند</span>
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="collapse" id="brand">
+      <div class="filter-body">
+        <label><input type="checkbox"> امرسان</label>
+        <label><input type="checkbox"> اسنوا</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-switch">
+    <span>فقط کالاهای موجود</span>
+    <div class="form-check form-switch m-0">
+      <input class="form-check-input" type="checkbox" id="onlyAvailable" checked>
+    </div>
+  </div>
+
+  <div class="filter-switch">
+    <span>کالاهای تخفیف دار</span>
+    <div class="form-check form-switch m-0">
+      <input class="form-check-input" type="checkbox" checked>
+    </div>
+  </div>
+
+  <div class="filter-switch">
+    <span>ارسال امروز</span>
+    <div class="form-check form-switch m-0">
+      <input class="form-check-input" type="checkbox" checked>
+      
+    </div>
+  </div>
+    <button class="border-0  d-block w-100 rounded-5 close ">بستن</button>
+
+</aside>
+    </div>
+
+
+    <div>
+
+      <section class="category-top ">
+
+        <h1 class="category-title">یخچال فریزر</h1>
+
+        <div class="category-toolbar d-flex align-items-center flex-wrap">
+
+          <button type="button" class="category-filter-btn">
+            <i class="fas fa-filter"></i>
+            فیلترها
+          </button>
+          <!-- endfilter -->
+
+          <ul class="category-sort list-unstyled d-flex align-items-center mb-0">
+            <li><a href="#" class="category-sort-item">دکوراسیون</a></li>
+            <li><a href="#" class="category-sort-item">جدیدترین</a></li>
+            <li><a href="#" class="category-sort-item">پرفروش ترین</a></li>
+            <li><a href="#" class="category-sort-item">پیشنهاد خریداران</a></li>
+          </ul>
+
+          <span class="category-count">۹۲۶ کالا</span>
+
+        </div>
+
+      </section>
+      <!-- start card -->
+      <section class="product-list">
+        <div class="row g-3 g-lg-4 flex-row-reverse products-row">
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/pic (1).png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر امرسان دوقلو</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse ">
+                <div class="d-flex flex-column text-start gap-1">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount d-none">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/pic (3).png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر سه درب ال جی</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/pic (4).png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر دوو</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">AIRLINKS 203 N-LITE</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount d-none">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/pic (5).png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر اسمگ مدل FB04</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/05.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر امرسان دو درب</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/6.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر دوقلو دیپوینت</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr"> N-lITE 203 aIRlINKS </p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount d-none">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/7.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر ساید بای ساید ال جی</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount d-none">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/8.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">فریزر تک درب امرسان</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/9.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر دوقلو ال جی</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount d-none">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/10.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">فریزر تک درب امرسان</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/11.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">یخچال فریزر امرسان دو درب</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount d-none">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <article class="product-card">
+
+              <img class="product-card-img" src="./assets/img/filter/12.png" alt="یخچال فریزر دوو">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="product-card-title">فریزر تک درب امرسان</h3>
+                <span class="product-card-rate">
+                  ۴.۳
+                  <i class="far fa-star"></i>
+
+                </span>
+              </div>
+
+              <p class="product-card-model" dir="ltr">N-lITE 203 aIRlINKS</p>
+
+              <div class="product-card-colors d-flex">
+                <span class="color-dot" style="background-color: #52595A"></span>
+                <span class="color-dot" style="background-color: #745F38"></span>
+                <span class="color-dot" style="background-color: #AA9E89"></span>
+                <span class="color-dot" style="background-color: #737272"></span>
+              </div>
+
+              <div class="product-card-bottom d-flex justify-content-between align-items-end flex-row-reverse">
+                <div class="d-flex flex-column text-start">
+                  <del class="product-card-old">۲,۴۰۰,۰۰۰</del>
+                  <span class="product-card-price">۱,۶۴۰,۰۰۰ تومان</span>
+                </div>
+                <span class="product-card-discount">۳۰٪</span>
+              </div>
+
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+
+  <!-- end card -->
+  <section class="seo-text">
+
+    <h2 class="seo-text-title">خانه و آشپزخانه</h2>
+
+    <div class="seo-text-body">
+      <p>خرید وسایل خانه و آشپزخانه یکی از لذت‌بخش‌ترین و در عین حال ضروری‌ترین کارهایی است که هر کسی در زندگی با آن
+        مواجه می‌شود. انتخاب درست این وسایل می‌تواند راحتی و زیبایی را به خانه شما بیاورد. برای خرید موفق، بهتر است از
+        فروشگاه‌های معتبر با تنوع بالای محصولات و کیفیت تضمین‌شده خرید کنید. دیجی کالا با ارائه مجموعه‌ای از بهترین
+        برندهای داخلی و خارجی، این امکان را فراهم کرده است که تنها با چند کلیک، انواع لوازم آشپزخانه و خانه را بررسی
+        کرده و بهترین گزینه را برای خود و خانواده‌تان انتخاب کنید.</p>
+      <p>یخچال یکی از مهم‌ترین وسایل آشپزخانه است که نقش مهمی در حفظ تازگی مواد غذایی دارد. در دیجی کالا، انواع یخچال از
+        برندهای معتبر مانند سامسونگ، اسنوا و سایر برندهای داخلی و خارجی با تضمین اصالت و خدمات نصب در دسترس است. توضیحات
+        کامل درباره ابعاد، ظرفیت و ویژگی‌های هر محصول، به شما کمک می‌کند تا بهترین انتخاب را با توجه به نیاز خود داشته
+        باشید.
+      </p>
+      <p>در کنار یخچال، فریزر نیز از اهمیت بالایی برخوردار است. با داشتن یک فریزر باکیفیت، می‌توانید مواد غذایی را به
+        مدت طولانی تازه نگه دارید. دیجی کالا با ارائه انواع فریزرهای کوچک و بزرگ از برندهای مختلف، امکان مقایسه و خرید
+        آسان را برای شما فراهم کرده است. تمامی محصولات با ضمانت اصالت کالا و سلامت فیزیکی عرضه می‌شوند تا با خیالی آسوده
+        خرید خود را انجام دهید.
+        اگر قصد دارید آشپزخانه‌ای کامل و مجهز داشته باشید، دیجی کالا با ارائه انواع لوازم برقی آشپزخانه، ظروف، وسایل
+        دکوری، فرش و مبلمان، یک انتخاب هوشمندانه را برای شما ممکن کرده است. با خرید از دیجی کالا، علاوه بر دریافت
+        محصولات باکیفیت، از خدمات پس از فروش و پشتیبانی حرفه‌ای نیز بهره‌مند خواهید شد.</p>
+    </div>
+
+    <button type="button" class="seo-text-toggle">مشاهده بیشتر...</button>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+
+      <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
+
+  <script src="./partials/header.js"></script>
+  <script src="./partials/footer.js"></script>
+
+  <script src="./assets/js/filter.js"></script>
+
+
+</body>
+</html>

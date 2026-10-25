@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compare</title>
+    <link rel="stylesheet" href="./assets/scss/compare.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="./assets/scss/Contactus.css"> -->
+    <link rel="stylesheet" href="./assets/node_modules/mdb-ui-kit/css/mdb.min.css">
+
+
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body dir="rtl">
+    <div id="header-placeholder"></div>
+
+    <nav data-mdb-navbar-init class="navbar navbar-expand-lg shadow-0 time-line  ">
+        <div class="container-fluid mb-4 mt-1">
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item "><a href="./index.html">زی هوم</a></li>
+
+                    <li class="breadcrumb-item " aria-current="page"><a href="#" class="">
+                            خانه وآشپزخانه
+
+                        </a></li>
+                    <li class="breadcrumb-item " aria-current="page"><a href="#" class="">
+                            لوازم برقی
+
+                        </a></li>
+                    <li class="breadcrumb-item text-black" aria-current="page"><a href="#" class="text-black">
+                            یخچال
+
+                        </a></li>
+
+                </ol>
+            </nav>
+        </div>
+    </nav>
+    <div id="compare-box"></div>
+    <section class="main-compare">
+        <p class="title-main">مقایسه یخچال</p>
+        <div class="compare-cards d-flex flex-row gap-4">
+            <div class="compare-card empty d-flex flex-column">
+                <img src="./assets/img/compare/Copersion.png" alt="">
+
+                <button class="btn-add" data-mdb-modal-init data-mdb-target="#compareModal">+ افزودن کالا</button>
+            </div>
+
+            <div class="compare-card fill d-flex flex-column gap-2 justify-content-between ">
+
+                <div>
+                    <img src="./assets/img/compare/person.svg">
+                    <span class="text-danger">حذف</span>
+                </div>
+                <div class="d-flex flex-row">
+                    <img src="./assets/img/compare/pic (2).svg">
+                    <div class="d-flex flex-column font14 gap-1">
+                        <span class="text-end ">یخچال فریزر امرسان دوقلو</span>
+                        <span class="text-end">N-lITE 203
+                        </span>
+                        <span class="d-flex flex-column text-start">
+                            <span class="text-decoration-line-through">۲,۴۰۰,۰۰۰</span>
+                            <span class="font16 text-black">۱,۶۴۰,۰۰۰ تومان </span>
+
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <button class="red btn-move border-0 text-light rounded-5 w-100 py-2 px-3 ">افزودن به سبد خرید</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="general-details">
+
+        <div class="title-general-details">
+            مشخصات کلی
+        </div>
+        <div class="details">
+            <table class="cotable table ">
+                <tbody>
+                    <tr>
+                        <th class="py-4" scope="row">نوع یخچال</th>
+                        <td class="py-4">ساید بای ساید ال جی</td>
+                        <td class="py-4"></td>
+                    </tr>
+                    <tr>
+                        <th class="py-4" scope="row">رنگ</th>
+                        <td class="py-4">سفید</td>
+                        <td class="py-4"></td>
+                    </tr>
+                    <tr>
+                        <th class="py-4" scope="row">ظرفیت</th>
+                        <td class="py-4"> ۳۲۰ لیتر</td>
+                        <td class="py-4"> </td>
+                    </tr>
+                    <tr>
+                        <th class="py-4" scope="row">سیستم بدون برفک</th>
+                        <td class="py-4">دارد</td>
+                        <td class="py-4"></td>
+                    </tr>
+                    <tr>
+                        <th class="py-4 border-0" scope="row">مصرف انرژی</th>
+                        <td class="py-4 border-0">A+</td>
+                        <td class="py-4 border-0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="title-general-details mt-4">
+            امکانات ویژه
+        </div>
+        <div>
+            <table class="cotable-features table">
+                <tbody>
+                    <tr>
+                        <th class="py-4" scope="row">نمایشگر دیجیتال</th>
+                        <td class="py-4">دارد</td>
+                        <td class="py-4"></td>
+                    </tr>
+                    <tr>
+                        <th class="py-4" scope="row">لامپ LED</th>
+                        <td class="py-4">دارد</td>
+                        <td class="py-4"></td>
+                    </tr>
+                    <tr>
+                        <th class="py-4 border-0" scope="row">آبسردکن</th>
+                        <td class="py-4 border-0">ندارد</td>
+                        <td class="py-4 border-0"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="text-details">
+
+        <h5 class="font16 mb-3">مقایسه یخچال ها </h5>
+        <p class="font16">در مقایسه بین یخچال امرسان مدل A و مدل B، اولین تفاوت قابل‌توجه در نوع طراحی آن‌ها است. مدل A
+            به‌عنوان یخچال فریزر بالا، طراحی ساده‌تری دارد و برای خانواده‌های کوچک یا فضاهای محدود مناسب است. در مقابل،
+            مدل B با طراحی ساید بای ساید، فضای بیشتری را برای نگهداری مواد غذایی فراهم کرده و با امکانات پیشرفته‌تری
+            مانند آبسردکن و قابلیت اتصال به آب شهری، گزینه‌ای ایده‌آل برای خانواده‌های پرجمعیت محسوب می‌شود. همچنین،
+            مصرف انرژی در مدل B با رتبه A++ کمی بهینه‌تر از مدل A با رتبه A+ است که می‌تواند در کاهش هزینه‌های برق
+            تأثیرگذار باشد.
+            از نظر ابعاد و وزن نیز تفاوت محسوسی بین این دو مدل دیده می‌شود. مدل A با ابعاد کوچک‌تر و وزن کمتر، حمل‌ونقل
+            آسان‌تری دارد و برای آشپزخانه‌های کوچک مناسب‌تر است. از سوی دیگر، مدل B با ابعاد بزرگ‌تر و وزن بیشتر، فضای
+            ذخیره‌سازی بیشتری ارائه می‌دهد که برای خانواده‌های پرجمعیت یا کسانی که به فضای زیاد برای نگهداری مواد غذایی
+            نیاز دارند، گزینه بهتری است. هر دو مدل به سیستم بدون برفک، محفظه نگهداری میوه و سبزیجات و لامپ LED داخلی
+            مجهز هستند که باعث حفظ کیفیت مواد غذایی و سهولت استفاده می‌شود.</p>
+
+        <button class="border-0 bg-body my-0 text-secondary py-0" data-mdb-collapse-init
+            data-mdb-target="#readmore">مشاهده بیشتر...</button>
+        <div class="collapse" id="readmore">از نظر ابعاد و وزن نیز تفاوت محسوسی بین این دو مدل دیده می‌شود. مدل A با
+            ابعاد کوچک‌تر و وزن کمتر، حمل‌ونقل آسان‌تری دارد و برای آشپزخانه‌های کوچک مناسب‌تر است. از سوی دیگر، مدل B
+            با ابعاد بزرگ‌تر و وزن بیشتر، فضای ذخیره‌سازی بیشتری ارائه می‌دهد که برای خانواده‌های پرجمعیت یا کسانی که به
+            فضای زیاد برای نگهداری مواد غذایی نیاز دارند، گزینه بهتری است. هر دو مدل به سیستم بدون برفک، محفظه نگهداری
+            میوه و سبزیجات و لامپ LED داخلی مجهز هستند که باعث حفظ کیفیت مواد غذایی و سهولت استفاده می‌شود.</p>
+        </div>
+    </section>
+    <!-- Scrollable modal -->
+
+    <div class="modal fade" id="compareModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title font16">برای مقایسه کالای مورد نظر را انتخاب کنید</h5>
+                    <button type="button" class="btn-close me-auto ms-3" data-mdb-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="search" class="form-control font14 d-inline-block mb-3 w-50" placeholder="جستجو">
+                    <span class="text-danger font16 me-5">25کالا</span>
+                    <span class="font16  me-5">1 کالابرای انتخاب باقی مانده</span>
+
+
+                    <div class="row g-3 flex-row-reverse ">
+
+                        <!-- strat card1 -->
+                        <div class="col-4 ">
+                            <div class="card product-card compare-item product" data-id="1" data-name="یخچال فریزر امرسان کشویی"
+                                data-img="./assets/img/compare/pic (5).png">
+
+                                <img src="./assets/img/compare/pic (5).png" class="product-img"
+                                    alt="یخچال فریزر امرسان کشویی">
+
+                                <div class="product-info">
+
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="product-title mb-0 title" >یخچال فریزر امرسان کشویی</h6>
+                                        <span class="product-rate"> 
+                                            4.3
+                                            <i class="far fa-star"></i>
+
+                                        </span>
+                                    </div>
+
+
+                                    <p class="product-model mb-2">N-IITE 203 alRIINKS</p>
+
+
+                                    <div class="product-colors mb-3">
+                                        <span style="background:#6b6b6b"></span>
+                                        <span style="background:#a39e8f"></span>
+                                        <span style="background:#b5a27a"></span>
+                                        <span style="background:#5a4630"></span>
+                                    </div>
+
+                                    <!-- قیمت -->
+                                    <div class="product-price text-start">
+                                        <del class="old-price">2,400,000</del>
+                                        <div class="new-price">
+                                            1,640,000 <small>تومان</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="col-4 product">
+                            <div class="card product-card compare-item product" data-id="1" data-name="یخچال فریزر امرسان دو قلو "
+                                data-img="img/fridge1.png">
+
+                                <img src="./assets/img/compare/pic (8).png" class="product-img"
+                                    alt="یخچال فریزر امرسان کشویی">
+
+                                <div class="product-info">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="product-title mb-0">یخچال فریزر امرسان دو قلو </h6>
+                                        <span class="product-rate">
+                                            4.3
+                                            <i class="far fa-star"></i>
+
+                                        </span>
+                                    </div>
+
+                                    <p class="product-model mb-2">N-IITE 203 alRIINKS</p>
+
+                                    <div class="product-colors mb-3">
+                                        <span style="background:#6b6b6b"></span>
+                                        <span style="background:#a39e8f"></span>
+                                        <span style="background:#b5a27a"></span>
+                                        <span style="background:#5a4630"></span>
+                                    </div>
+
+                                    <div class="product-price text-start">
+                                        <del class="old-price">2,400,000</del>
+                                        <div class="new-price">
+                                            1,640,000 <small>تومان</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 product">
+                            <div class="card product-card compare-item product" data-id="1" data-name="یخچال فریزر امرسان دو قلو "
+                                data-img="img/fridge1.png">
+
+                                <img src="./assets/img/compare/pic (7).png" class="product-img"
+                                    alt="یخچال فریزر امرسان کشویی">
+
+                                <div class="product-info">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="product-title mb-0">یخچال فریزر امرسان دو قلو </h6>
+                                        <span class="product-rate">
+
+                                            4.3
+                                            <i class="far fa-star"></i>
+
+                                        </span>
+                                    </div>
+
+                                    <p class="product-model mb-2">N-IITE 203 alRIINKS</p>
+
+                                    <div class="product-colors mb-3">
+                                        <span style="background:#6b6b6b"></span>
+                                        <span style="background:#a39e8f"></span>
+                                        <span style="background:#b5a27a"></span>
+                                        <span style="background:#5a4630"></span>
+                                    </div>
+
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="bg-danger text-light radius h-25 font14 py-1 px-2 ">30%</div>
+                                        <div class="product-price text-start">
+
+                                            <del class="old-price">2,400,000</del>
+                                            <div class="new-price">
+                                                1,640,000 <small>تومان</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row g-3 flex-row mt-2 ">
+                        <div class="col-4 product">
+                            <div class="card product-card compare-item product" data-id="1" data-name="یخچال فریزر امرسان کشویی"
+                                data-img="img/fridge1.png">
+
+                                <img src="./assets/img/compare/01.png" class="product-img"
+                                    alt="یخچال فریزر امرسان کشویی">
+
+                                <div class="product-info">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="product-title mb-0">یخچال فریزر امرسان کشویی</h6>
+                                        <span class="product-rate">
+                                            4.3
+                                            <i class="far fa-star"></i>
+
+                                        </span>
+                                    </div>
+
+                                    <p class="product-model mb-2">N-IITE 203 alRIINKS</p>
+
+                                    <div class="product-colors mb-3">
+                                        <span style="background:#6b6b6b"></span>
+                                        <span style="background:#a39e8f"></span>
+                                        <span style="background:#b5a27a"></span>
+                                        <span style="background:#5a4630"></span>
+                                    </div>
+
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="bg-danger text-light radius h-25 font14 py-1 px-2 ">30%</div>
+                                        <div class="product-price text-start">
+
+                                            <del class="old-price">2,400,000</del>
+                                            <div class="new-price">
+                                                1,640,000 <small>تومان</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="col-4 product">
+                            <div class="card product-card compare-item product" data-id="1" data-name="یخچال فریزر امرسان کشویی"
+                                data-img="img/fridge1.png">
+
+                                <img src="./assets/img/compare/02.png" class="product-img"
+                                    alt="یخچال فریزر امرسان کشویی">
+
+                                <div class="product-info">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="product-title mb-0">یخچال فریزر امرسان کشویی</h6>
+                                        <span class="product-rate">
+                                            4.3
+                                            <i class="far fa-star"></i>
+
+                                        </span>
+                                    </div>
+
+                                    <p class="product-model mb-2">N-IITE 203 alRIINKS</p>
+
+                                    <div class="product-colors mb-3">
+                                        <span style="background:#6b6b6b"></span>
+                                        <span style="background:#a39e8f"></span>
+                                        <span style="background:#b5a27a"></span>
+                                        <span style="background:#5a4630"></span>
+                                    </div>
+
+                                    <div class="product-price text-start">
+                                        <del class="old-price">2,400,000</del>
+                                        <div class="new-price">
+                                            1,640,000 <small>تومان</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 product">
+                            <div class="card product-card compare-item product" data-id="1" data-name="یخچال فریزر امرسان "
+                                data-img="img/fridge1.png">
+
+                                <img src="./assets/img/compare/03.png" class="product-img"
+                                    alt="یخچال فریزر امرسان ">
+
+                                <div class="product-info">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h6 class="product-title mb-0">یخچال فریزر امرسان </h6>
+                                        <span class="product-rate">
+
+                                            4.3
+                                            <i class="far fa-star"></i>
+
+                                        </span>
+                                    </div>
+
+                                    <p class="product-model mb-2">N-IITE 203 alRIINKS</p>
+
+                                    <div class="product-colors mb-3">
+                                        <span style="background:#6b6b6b"></span>
+                                        <span style="background:#a39e8f"></span>
+                                        <span style="background:#b5a27a"></span>
+                                        <span style="background:#5a4630"></span>
+                                    </div>
+
+                                    <!-- قیمت -->
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="bg-danger text-light radius h-25 font14 py-1 px-2 ">30%</div>
+                                        <div class="product-price text-start">
+
+                                            <del class="old-price">2,400,000</del>
+                                            <div class="new-price">
+                                                1,640,000 <small>تومان</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <!-- کارت‌های بیشتر... -->
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+
+
+    <script src="./partials/header.js"></script>
+    <script src="./partials/footer.js"></script>
+    <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
+    <script src="./assets/js/compare.js"></script>
+</body>
+
+</html>

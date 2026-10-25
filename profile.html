@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.3.0/mdb.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="./assets/node_modules/mdb-ui-kit/css/mdb.min.css">
+
+
+  <!-- <link rel="stylesheet" href="assets/node_modules/mdb-ui-kit/css/mdb.min.css"> -->
+  <link rel="stylesheet" href="assets/node_modules/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.css">
+  <title>profile</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./assets/scss/profile.css">
+
+</head>
+
+<body dir="rtl">
+
+
+
+  <!-- end header -->
+
+  <div id="header-placeholder"></div>
+
+  <nav data-mdb-navbar-init class="navbar navbar-expand-lg shadow-0 time-line ">
+    <div class="container-fluid">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb text-end">
+          <li class="breadcrumb-item "><a href="#">زی هوم</a></li>
+          <li class="breadcrumb-item"><a href="#">پروفایل کاربری</a></li>
+          <li class="breadcrumb-item " aria-current="page"><a href="#">سفارش ها</a></li>
+        </ol>
+      </nav>
+    </div>
+  </nav>
+  <div class="d-flex profile-main ">
+    <section class="section-sidebar ">
+      <ul class=" list-group-light user-sidebar ps-0 ">
+        <span class="list-group-item li-img w-100 ">
+          <img class="d-block mx-auto my-3" src="./assets/img/profile/logosidbar.png">
+        </span>
+        <li class="list-group-item mx-4 ">
+
+          <p class="sidbar-name fw-bold ">شهپرگلشنی</p>
+          <span class="d-flex justify-content-between">
+            <span>09123456789</span>
+            <img src="./assets/img/profile/Pen, Edit.png">
+
+          </span>
+        </li>
+        <li class="list-group-item d-flex mx-4 justify-content-between sidebar-wallet-btn">
+
+
+          <span class="">
+            <img src="./assets/img/profile/wallet.png">
+            کیف پول
+          </span>
+          <span>تومان0</span>
+        </li>
+        <li id="sidebar-my-orders" class="list-group-item mx-4 d-flex my-orders-li hover-red">
+          <img src="./assets/img/profile/Shopping.png">
+          <span>سفارش ها</span>
+        </li>
+        <li class="list-group-item mx-4 ">
+          <img src="./assets/img/profile/Favorite.png">
+          <span>علاقه مندی ها</span>
+        </li>
+        <li class="list-group-item mx-4">
+          <img src="./assets/img/profile/allert.png" alt="">
+          <span> پیام ها</span>
+        </li>
+        <li class="list-group-item mx-4 sidebar-address-btn">
+          <img src="./assets/img/profile/location.png" alt="">
+          <span>آدرس ها</span>
+        </li>
+        <li class="list-group-item mx-4">
+          <img src="./assets/img/profile/ramz.png" alt="">
+          <span>تغییر رمز عبور </span>
+
+        </li>
+        <li class="list-group-item mx-4 edit-profile">
+          <img src="./assets/img/profile/person.png" alt="">
+          <span> ویرایش پروفایل</span>
+        </li>
+        <li class="list-group-item mx-4">
+          <img src="./assets/img/profile/log out.png" alt="">
+          <span> خروج</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="profile-left col-lg-9">
+      <div class="order d-flex col-lg-9">
+        <div class="d-flex g-3">
+          <img src="./assets/img/profile/icon-pic2.png" alt="">
+
+          <span class="d-flex flex-column">
+            <span class="order-item">تحویل شده</span>
+            <span class="order-count">2سفارش</span>
+          </span>
+        </div>
+        <div class="d-flex">
+          <img src="./assets/img/profile/icon- pic1.png" alt="">
+
+          <span class="d-flex flex-column g-3">
+
+            <span class="order-item">درحال ارسال</span>
+            <span class="order-count">2سفارش</span>
+          </span>
+        </div>
+        <div class="d-flex g-3">
+          <img src="./assets/img/profile/icon- pic.png" alt="">
+
+
+          <span class="d-flex flex-column ">
+
+            <span class="order-item">مرجوعی</span>
+            <span class="order-count">2سفارش</span>
+          </span>
+
+        </div>
+        <div class="d-flex g-3">
+          <img src="./assets/img/profile/icon pic.png" alt="">
+
+          <span class="d-flex flex-column">
+
+            <span class="order-item">لغو شده</span>
+            <span class="order-count">2سفارش</span>
+          </span>
+
+        </div>
+      </div>
+
+      <div class="order-history">
+        <div class="order-history-text">
+
+          <span> <img src="./assets/img/profile/Shopping.png">
+            <span>تاریخچه ی سفارشات</span>
+            <span>
+
+            </span>
+        </div>
+
+
+
+        <div class="row d-flex flex-row ">
+          <div class="col-sm-2 col-md-3">
+            <label class="form-label text-14" for="status">وضعیت</label>
+            <div class="position-relative">
+              <select id="status" class="form-control text-14 select-input">
+                <option id="alll" class="text-14" value="all">همه موارد</option>
+                <option class="text-14" value="delivered">تحویل شده</option>
+                <option value="shipping">درحال ارسال</option>
+                <option value="returned">مرجوعی</option>
+                <option value="canceled">لغو شده</option>
+              </select>
+              <i class="fas fa-chevron-down chevron-icon "></i>
+            </div>
+          </div>
+
+
+          <div class="col-sm-2 col-md-3">
+            <label class="form-label  text-14" for="start-history">از تاریخ</label>
+            <div class="position-relative">
+              <input type="text" id="start-history" class="form-control text-14" data-jdp placeholder="انتخاب تاریخ">
+              <i class="fas fa-calendar-days date-icon"></i>
+              <i class="fas fa-chevron-down chevron-icon"></i>
+
+            </div>
+          </div>
+
+          <div class=" col-sm-2 col-md-3 ">
+            <label class="form-label text-14" for="end-history">تا تاریخ</label>
+            <div class="position-relative">
+              <input type="text" id="end-history" class="form-control text-14 " data-jdp placeholder="انتخاب تاریخ">
+              <i class="fas fa-calendar-days date-icon"></i>
+              <i class="fas fa-chevron-down chevron-icon"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-md-3 d-flex align-items-end text-end justify-content-center filter">
+            <button type="button" class="filter-btn">
+              <i class="fas fa-filter"></i>
+              فیلتر
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive mt-5 table-asli
+        ">
+          <table class="table align-middle mb-0 table-img ">
+            <thead>
+              <tr>
+                <th scope="col">ردیف</th>
+                <th scope="col">شماره سفارش</th>
+                <th scope="col">تاریخ</th>
+                <th scope="col">مبلغ</th>
+                <th scope="col">وضعیت</th>
+              </tr>
+            </thead>
+            <tbody class="">
+              <tr>
+                <td colspan="5" class="empty-orders border-bottom-0">
+                  <img class="check" src="./assets/img/profile/_x33_3_Checklist.png" alt="">
+                  <p class="testy">هنوز سفارشی ثبت نکرده اید</p>
+                </td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+          <table class="table align-middle mb-0 d-none table-filled">
+            <thead>
+              <tr>
+                <th class="" scope="col">ردیف</th>
+                <th scope="col">شماره سفارش</th>
+                <th scope="col">تاریخ</th>
+                <th scope="col">مبلغ</th>
+                <th scope="col">وضعیت</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>۱</td>
+                <td>۱۲۳۴۵۶۷</td>
+                <td>۱۴۰۴/۰۳/۴</td>
+                <td>۱۰۰,۰۰۰ تومان</td>
+                <td><span class="order-status status-shipping">درحال ارسال</span></td>
+              </tr>
+              <tr>
+                <td>۲</td>
+                <td>۱۲۳۴۵۶۷</td>
+                <td>۱۴۰۴/۰۳/۴</td>
+                <td>۱۰۰,۰۰۰ تومان</td>
+                <td><span class="order-status status-canceled">لغو شده</span></td>
+              </tr>
+              <tr>
+                <td>۳</td>
+                <td>۱۲۳۴۵۶۷</td>
+                <td>۱۴۰۴/۰۳/۴</td>
+                <td>۱۰۰,۰۰۰ تومان</td>
+                <td><span class="order-status status-delivered">تحویل شده</span></td>
+              </tr>
+              <tr class="">
+                <td>۴</td>
+                <td>۱۲۳۴۵۶۷</td>
+                <td>۱۴۰۴/۰۳/۴</td>
+                <td>۱۰۰,۰۰۰ تومان</td>
+                <td><span class="order-status status-returned border-0">مرجوع شده</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- start informationpage -->
+      <div class="tab-content">
+
+        <!-- حالت نمایش -->
+        <div class="tab-pane fade show active information d-none" id="viewPane" role="tabpanel">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="mb-0">اطلاعات حساب کاربری</h5>
+            <a class="edit-trigger text-danger d-flex align-items-center gap-1">
+              <i class="fas fa-pen"></i>
+              <span>ویرایش</span>
+            </a>
+          </div>
+
+          <div class="row mb-4 flex-row-reverse">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <p class="text-muted mb-1">تاریخ تولد</p>
+              <p class="mb-0">۱۳۷۸/۰۷/۰۳</p>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted mb-1">نام و نام خانوادگی</p>
+              <p class="mb-0">زهرا جلوداری</p>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <p class="text-muted mb-1">کدملی</p>
+              <p class="mb-0">۰۰۲۲۱۳۳۴۵۵</p>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted mb-1">جنسیت</p>
+              <p class="mb-0">خانم</p>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <p class="text-muted mb-1">شماره موبایل</p>
+              <p class="mb-0">۰۹۰۳۸۳۹۹۶۰</p>
+            </div>
+            <div class="col-md-6">
+              <p class="text-muted mb-1">ایمیل</p>
+              <p class="mb-0">z.j@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <p class="text-muted mb-1">محل سکونت</p>
+              <p class="mb-0">تهران، خ پیروزی، خ عبدمستگاه، کوچه قربانی، پلاک ۳، واحد ۴</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- حالت ویرایش -->
+        <div class="form-edit d-none " id="editPane" role="tabpanel">
+          <form class="edit-profile-form " dir="">
+            <div class="row mb-4 flex-row-reverse ">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label class="form-label" for="birthDate">تاریخ تولد</label>
+                <input type="text" id="birthDate" class="form-control jalali-datepicker" placeholder="۱۳۷۲/۰۲/۲۹">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="fullName">نام و نام خانوادگی</label>
+                <input type="text" id="fullName" class="form-control" value="شهیر گلشتی">
+              </div>
+            </div>
+
+            <div class="row mb-4 flex-row-reverse ">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label class="form-label" for="nationalCode">کدملی</label>
+                <input type="text" id="nationalCode" class="form-control" value="۴۴۴۱۸۹۸">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="gender">جنسیت</label>
+                <select class="form-select" id="gender">
+                  <option value="زن" selected>زن</option>
+                  <option value="مرد">مرد</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-4 flex-row-reverse ">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label class="form-label" for="phone">شماره تماس</label>
+                <input type="text" id="phone" class="form-control" value="۰۹۱۲۳۴۵۶۷۸" disabled>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email">ایمیل</label>
+                <input type="email" id="email" class="form-control" value="z.joovi@gmail.com">
+              </div>
+            </div>
+
+          </form>
+          <span class="d-block text-start mt-3">
+            <button type="submit" class="btn btn-edit btn-danger px-4 ">اعمال تغییرات</button>
+          </span>
+        </div>
+
+      </div>
+    </div>
+    <!-- start address -->
+    <div class="address-card d-none col-lg-9 ">
+      <div class="address-header d-flex align-items-center justify-content-between">
+        <span class="address-title">
+          <img src="./assets/img/profile/location.png">
+          آدرس ها</span>
+        <span class="address-icon-btn">
+          <!-- <i class="fas fa-location-dot"></i> -->
+        </span>
+      </div>
+
+      <hr class="address-divider">
+
+      <div class="address-empty text-center py-5">
+        <img class="check mb-3" src="./assets/img/profile/adress.svg" alt="">
+        <p class="testy mb-4">هنوز آدرسی ثبت نکرده اید</p>
+        <button type="button" class="btn btn-add-address px-4">
+          <i class="fas fa-plus ms-1"></i>
+
+          <span>افزودن آدرس جدید</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- end address -->
+
+    <div class="address-fill d-none col-lg-9  ">
+
+      <div class="address-header d-flex align-items-center justify-content-between flex-row-reverse">
+        <button type="button" class="btn-add-address-inline" data-mdb-ripple-init data-mdb-modal-init
+          data-mdb-target="#modal2">
+          <i class="fas fa-plus"></i>
+          افزودن آدرس جدید
+        </button>
+        <span class="address-title">
+          <img src="./assets/img/profile/location.png">
+
+          آدرس ها
+        </span>
+      </div>
+
+      <hr class="address-divider">
+
+      <div class="address-filled">
+
+        <!-- دیو ۲: آدرس اول -->
+        <div class="address-item mb-3">
+          <div class="d-flex justify-content-between flex-row">
+            <span class="address-item-title">
+              <img src="./assets/img/profile/location.png">
+
+              استان تهران، شهر تهران
+            </span>
+            <a href="#" class="address-edit-link">
+              <i class="fas fa-pen"></i>
+              ویرایش
+            </a>
+          </div>
+          <p class="address-item-text mb-1">
+            خ پیروزی، خ صد دستگاه قزوینی، کوچه قربانی، پلاک ۳، واحد ۳
+          </p>
+          <p class="address-item-text mb-1">کدپستی: ۱۷۶۵۲۷۸۹۰</p>
+          <p class="address-item-text mb-2">شماره تماس: ۰۹۱۲۳۴۵۶۷</p>
+
+        </div>
+
+        <!-- دیو ۳: آدرس دوم -->
+        <div class="address-item">
+          <div class="d-flex justify-content-between flex-row">
+            <span class="address-item-title">
+              <img src="./assets/img/profile/location.png">
+
+              استان تهران، شهر تهران
+            </span>
+            <a href="#" class="address-edit-link">
+              <i class="fas fa-pen"></i>
+              ویرایش
+            </a>
+          </div>
+          <p class="address-item-text mb-1">
+            خ پیروزی، خ صد دستگاه قزوینی، کوچه قربانی، پلاک ۳، واحد ۳
+          </p>
+          <p class="address-item-text mb-1">کدپستی: ۱۷۶۵۲۷۸۹۰</p>
+          <p class="address-item-text mb-2">شماره تماس: ۰۹۱۲۳۴۵۶۷</p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- end infopage -->
+    <!-- start mony
+ -->
+
+    <div class="wallet-section col-lg-9 d-flex flex-column d-none ">
+
+      <div class="wallet-balance-card d-flex align-items-center justify-content-between flex-row-reverse">
+        <div class="wallet-balance-actions d-flex align-items-center gap-3">
+
+          <button type="button" class="btn-wallet-filled" data-mdb-ripple-init data-mdb-modal-init
+            data-mdb-target="#walletModal">
+            <i class="fas fa-plus"></i>
+            افزایش موجودی
+          </button>
+
+
+
+
+          <button type="button" class="btn-wallet-outline" disabled>
+            <i class="fas fa-minus"></i>
+            برداشت موجودی
+          </button>
+        </div>
+
+        <div class="wallet-balance-info text-end d-flex flex-row gap-4">
+          <span class="wallet-balance-label">موجودی حساب</span>
+          <span class="wallet-balance-amount">۰ تومان</span>
+        </div>
+      </div>
+
+      <div class="wallet-history-card ">
+
+        <div class="wallet-history-header d-flex align-items-center justify-content-between">
+          <span class="wallet-history-title">
+            <img src="./assets/img/profile/card.png">
+            تاریخچه تراکنش ها و درخواست ها
+          </span>
+        </div>
+
+        <hr class="wallet-divider">
+
+        <div class="wallet-filter-row d-flex flex-wrap align-items-end justify-content-between">
+
+          <div class="wallet-filter-item">
+            <label class="form-label text-14">وضعیت</label>
+            <div class="position-relative">
+              <select class="form-control text-14 select-input">
+                <option value="all">همه موارد</option>
+              </select>
+              <i class="fas fa-chevron-down chevron-icon"></i>
+            </div>
+          </div>
+
+          <div class="wallet-filter-item">
+            <label class="form-label text-14">از تاریخ</label>
+            <div class="position-relative">
+              <input type="text" class="form-control text-14" data-jdp placeholder="انتخاب تاریخ">
+              <i class="fas fa-calendar-days date-icon"></i>
+              <i class="fas fa-chevron-down chevron-icon"></i>
+            </div>
+          </div>
+
+          <div class="wallet-filter-item">
+            <label class="form-label text-14">تا تاریخ</label>
+            <div class="position-relative">
+              <input type="text" class="form-control text-14" data-jdp placeholder="انتخاب تاریخ">
+              <i class="fas fa-calendar-days date-icon"></i>
+              <i class="fas fa-chevron-down chevron-icon"></i>
+            </div>
+          </div>
+
+          <div class="wallet-filter-item wallet-filter-btn-wrap">
+            <button type="button" class="filter-btn wallet-filter-btn   w-100">
+              <i class="fas fa-filter"></i>
+              فیلتر
+            </button>
+          </div>
+
+        </div>
+
+        <hr class="wallet-divider">
+
+        <div class="wallet-empty text-center">
+          <img class="check mb-3" src="./assets/img/profile/cash.png" alt="">
+          <p class="testy mb-0">هیچ تراکنشی یافت نشد</p>
+        </div>
+        <div class="wallet-filled d-none">
+          <div class="table-responsive wallet-table-wrap">
+            <table class="table align-middle mb-0 wallet-table">
+              <thead>
+                <tr>
+                  <th scope="col">ردیف</th>
+                  <th scope="col">تاریخ</th>
+                  <th scope="col">مبلغ</th>
+                  <th scope="col">درگاه بانکی</th>
+                  <th scope="col">وضعیت</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>۱</td>
+                  <td>۱۴۰۴/۰۳/۴</td>
+                  <td>۱۰۰,۰۰۰ تومان</td>
+                  <td>ملت</td>
+                  <td><span class="wallet-status wallet-status-unknown status-shipping">نامشخص</span></td>
+                </tr>
+                <tr>
+                  <td>۲</td>
+                  <td>۱۴۰۴/۰۳/۴</td>
+                  <td>۱۰۰,۰۰۰ تومان</td>
+                  <td>پارسیان</td>
+                  <td><span class="wallet-status wallet-status-failed status-canceled ">ناموفق</span></td>
+                </tr>
+                <tr>
+                  <td>۳</td>
+                  <td>۱۴۰۴/۰۳/۴</td>
+                  <td>۱۰۰,۰۰۰ تومان</td>
+                  <td>سامان</td>
+                  <td><span class="wallet-status wallet-status-success status-delivered">موفق</span></td>
+                </tr>
+                <tr>
+                  <td>۴</td>
+                  <td>۱۴۰۴/۰۳/۴</td>
+                  <td>۱۰۰,۰۰۰ تومان</td>
+                  <td>ملت</td>
+                  <td><span class="wallet-status wallet-status-refund status-returned">عودت وجه</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- end mony -->
+
+  <!-- start modal2 -->
+  <div class="modal 	modal-lg fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">افزودن آدرس جدید</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal2 d-flex flex-column ">
+          <div class="d-flex flex-column gap-3">
+
+            <button class="btn  rounded-3 w-100 py-3   btn-map " data-mdb-ripple-init data-mdb-modal-init
+              data-mdb-target="#modal3">
+              انتخاب آدرس با نقشه
+            </button>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <label class="form-label small text-black">استان <span class="text-danger">*</span></label>
+                <select class="form-select font12">
+                  <option class="font12 gray1">همه موارد</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label class="form-label small text-black">شهر <span class="text-danger">*</span></label>
+                <select class="form-select font12">
+                  <option class="font14 gray1">همه موارد</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label small text-black">خیابان و کوچه <span class="text-danger">*</span></label>
+              <input type="text" class="form-control font14 gray1" placeholder="خیابان ....">
+            </div>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <label class="form-label small text-black">پلاک <span class="text-danger">*</span></label>
+                <input type="text" class="form-control font14 gray1" placeholder="مثلا ۲">
+              </div>
+              <div class="col-6">
+                <label class="form-label small text-black">واحد</label>
+                <input type="text" class="form-control font14 gray1" placeholder="مثلا ۲">
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label small text-black">کدپستی <span class="text-danger">*</span></label>
+              <input type="text" class="form-control font12" placeholder="۱۰ رقمی باشد" maxlength="10">
+            </div>
+
+            <button class="btn btn-end  w-100 py-2 shadow-0">تایید و ادامه</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- end modal2 -->
+  <!-- start modal3 -->
+  <div class="modal 	modal-lg fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel"> آدرس جدید</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal3 d-flex flex-column ">
+          <div class="d-flex flex-column gap-3">
+
+            <button class="btn  rounded-3 w-100 py-1 text-end shadow-0 border  btn-map ">
+              <img src="./assets/img/checkout/Search.svg">
+              جست و جوی آدرس
+            </button>
+            <div class="map w-100 text-center">
+              <iframe class="rounded-2"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62243.94159078485!2d50.824499125336054!3d34.62818886140519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f93bb6eb88ce195%3A0xcc35bec1c2604470!2sQom%2C%20Qom%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1792397958551!5m2!1sen!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+
+
+            <div class="d-flex flex-row w-100 gap-3 justify-content-between">
+              <button class="btn btn-endright   py-2 shadow-0">انصراف</button>
+              <button class="btn btn-endleft   py-2 shadow-0" data-mdb-ripple-init data-mdb-modal-init
+                data-mdb-target="#modal4">تایید و ادامه</button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end modal3 -->
+  <!-- start modal4 -->
+  <div class="modal px-4 	modal-lg fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">تایید اطلاعات آدرس</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4 modal4 d-flex flex-column ">
+          <div class="d-flex flex-column gap-3">
+
+            <div class="map w-100 text-center">
+              <iframe class="rounded-3"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62243.94159078485!2d50.824499125336054!3d34.62818886140519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f93bb6eb88ce195%3A0xcc35bec1c2604470!2sQom%2C%20Qom%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1792397958551!5m2!1sen!2s"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+
+            <div class="d-flex flex-column gap-3">
+
+              <div class="d-flex align-items-center gap-2 border rounded-3 px-3 py-2">
+                <img src="./assets/img/checkout/marker-pin.svg" style="width: 24px;">
+                <span class="flex-fill">استان تهران ،شهر تهران ،خ پیروزی ،خ صد دستگاه ،کوچه قربانی ،پلاک
+                  ۳ واحد ۳</span>
+                <button type="button" class="btn btn-link p-0" data-mdb-ripple-init data-mdb-modal-init
+                  data-mdb-target="#modal5">
+                  <img src="./assets/img/checkout/bluepen.svg" style="width: 24px;">
+                </button>
+              </div>
+
+              <div class="d-flex flex-column gap-2">
+                <span>تحویل گیرنده چه کسی است ؟</span>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="receiver" id="receiverSelf" checked>
+                    <label class="form-check-label" for="receiverSelf">تحویل به خودم</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="receiver" id="receiverOther">
+                    <label class="form-check-label" for="receiverOther">تحویل به شخص دیگر</label>
+                  </div>
+
+                </div>
+              </div>
+              <div id="otherReceiverBox" class="row g-3 d-none ">
+                <div class="col-6">
+                  <label class="form-label text-black">نام و نام خانوادگی تحویل گیرنده <span
+                      class="text-danger">*</span></label>
+                  <input type="text" class="form-control font14 gray1" placeholder="مثلا ساره حسینی">
+                </div>
+                <div class="col-6">
+                  <label class="form-label text-black">شماره همراه <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control font14 gray1 text-end" placeholder="مثلا ۰۹۱۲۳۴۵۶۷۸"
+                    maxlength="11">
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <button id="saveaddress" class="btn  bg-color text-light flex-fill py-2" data-mdb-dismiss="modal">ذخیره
+                  آدرس</button>
+                <button class="btn text-red-color border-color shadow-0 flex-fill py-2" data-mdb-dismiss="modal"
+                  data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#modal8">انصراف</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end modal4 -->
+  <!-- start modal5 -->
+  <div class="modal 	modal-lg fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel"> ویرایش آدرس </h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal3 d-flex flex-column ">
+
+          <div class="d-flex flex-column gap-3">
+
+            <div class="row g-3">
+              <div class="col-6">
+                <label class="form-label text-black">نام و نام خانوادگی تحویل گیرنده <span
+                    class="text-danger">*</span></label>
+                <input type="text" class="form-control font14 gray1" value="زهرا جلوداری">
+              </div>
+              <div class="col-6">
+                <label class="form-label text-black ">شماره همراه <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control text-end  font14 gray1" value="۰۹۱۲۳۴۵۶۷۸" maxlength="11">
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <label class="form-label text-black">استان <span class="text-danger">*</span></label>
+                <select class="form-select  font14 gray1">
+                  <option class="font14 gray1">همه موارد</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label class="form-label text-black ">شهر <span class="text-danger">*</span></label>
+                <select class="form-select font14 gray1">
+                  <option class="font14 gray1">همه موارد</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label text-black">خیابان و کوچه <span class="text-danger">*</span></label>
+              <input type="text" class="form-control font14 gray1" value="خ پیروزی، خ صد دستگاه ، کوچه قربانی">
+            </div>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <label class="form-label text-black">پلاک <span class="text-danger">*</span></label>
+                <input type="text" class="form-control font14 gray1" value="۲">
+              </div>
+              <div class="col-6">
+                <label class="form-label text-black">واحد</label>
+                <input type="text" class="form-control font14 gray1" value="۲">
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label text-black">کدپستی <span class="text-danger">*</span></label>
+              <input type="text" class="form-control font14 gray1" value="۱۷۶۵۶۷۸۹۰۰" maxlength="10">
+            </div>
+
+            <button class="btn btn-danger w-100 py-2" data-mdb-dismiss="modal" data-mdb-dismiss="modal"
+              data-mdb-ripple-init></button> </div>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- end modal5 -->
+
+    <!-- start modal8 -->
+
+    <div class="modal px-4 	modal-lg fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font16" id="exampleModalLabel">خارج شدن از حساب</h5>
+            <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-4 modal4 d-flex flex-column ">
+            <div class="d-flex flex-column gap-3">
+
+              <div class="modal-header border-0 justify-content-center">
+                <h6 class="modal-title">خارج شدن از حساب</h6>
+              </div>
+
+              <div class="modal-body d-flex flex-column align-items-center text-center gap-3 pt-4">
+
+                <img src="./assets/img/home-img/logo-footer.png" style="width: 110px;" alt="زی هوم">
+
+                <span class="mt-3">خروج از حساب کاربری</span>
+
+                <p class="text-muted small mb-0">آیا مایل هستید از حساب کاربری خود خارج شوید؟</p>
+
+              </div>
+              <div class="d-flex gap-3">
+                <button id="saveaddress" class="btn bg-color text-light flex-fill py-2" data-mdb-dismiss="modal">خروج از
+                  حساب
+                </button>
+                <button class="btn btn-outline-danger flex-fill py-2" data-mdb-dismiss="modal">انصراف</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- end modal8 -->
+
+  <!-- start modal9 responsiv -->
+
+  <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-4">
+
+        <div class="modal-header">
+          <h6 class="modal-title" id="walletModalLabel">فعال سازی کیف پول</h6>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-3 px-4">
+
+          <img src="./assets/img/home-img/logo-footer.png" class="img-fluid" style="max-width: 110px;" alt="زی هوم">
+
+          <span dir="ltr">۰۹۱۲۳۴۵۶۷۸۹</span>
+
+          <p class="small text-muted mb-0">
+            به منظور احراز هویت و فعال‌سازی کیف پول، کد تأیید به شماره همراه شما ارسال خواهد شد.
+          </p>
+
+          <a href="#" class="small text-primary text-decoration-none" data-mdb-ripple-init data-mdb-modal-init
+            data-mdb-target="#modal10">
+            شرایط استفاده از کیف پول
+          </a>
+
+        </div>
+
+        <div class="modal-footer border-0 px-4 pb-4 d-flex flex-column flex-sm-row gap-2">
+          <button type="button" class="btn text-black border border-black rounded-5 shadow-0 m-0 w-100"
+            data-mdb-ripple-init data-mdb-dismiss="modal">
+            انصراف
+          </button>
+          <button type="button" class="btn bg-color text-light rounded-5 shadow-0 m-0 w-100" data-mdb-ripple-init
+            data-mdb-modal-init data-mdb-target="#modal11">
+            قبول شرایط و ادامه
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end modal9 responsiv -->
+  <!-- start modal10 responsiv -->
+
+  <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">شرایط استفاده از کیف پول</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body font14">
+          <p>
+            پرداخت سریع، ساده و امن در اپلیکیشن زی‌هوم
+            در زی‌هوم، فرایند پرداخت طوری طراحی شده که بدون نیاز به خروج از اپلیکیشن، بتوانید خرید خود را به‌راحتی و با
+            حداکثر امنیت انجام دهید. دیگر نیازی به وارد شدن به درگاه‌های بانکی جداگانه یا پر کردن اطلاعات تکراری نیست؛
+            همه‌چیز داخل خود اپلیکیشن انجام می‌شود، سریع، روان و بی‌دردسر.
+            با وارد کردن اطلاعات کارت بانکی‌تان، می‌توانید پرداخت را انجام دهید و این اطلاعات، تنها به‌صورت رمزنگاری‌شده
+            و ایمن در اختیار بانک قرار می‌گیرند. در دفعات بعد، کارت‌هایی که قبلاً استفاده کرده‌اید به‌صورت خودکار نمایش
+            داده می‌شوند تا فقط با یک انتخاب ساده، پرداخت را نهایی کنید. این فرایند باعث صرفه‌جویی در زمان و افزایش سرعت
+            خریدهای شما می‌شود.
+            همچنین در کنار کارت‌های بانکی، می‌توانید از کیف پول اختصاصی خود در اپلیکیشن نیز استفاده کنید. کافی‌ست آن را
+            یک‌بار شارژ کنید و از آن به‌عنوان روش پرداخت سریع و بدون نیاز به وارد کردن اطلاعات کارت بهره ببرید.
+            در صورتی که اطلاعات کارت شما تغییر کرده، به‌سادگی می‌توانید کارت جدید خود را اضافه کرده و جایگزین قبلی کنید.
+            اگر به هر دلیلی پرداخت شما ناموفق بود یا مبلغی از حساب شما کم شد اما سفارش ثبت نشد، نگران نباشید؛ مبلغ طی
+            حداکثر ۲۴ ساعت به حساب شما بازمی‌گردد.
+            در زی‌هوم ما تلاش کرده‌ایم تجربه‌ی پرداخت را به ساده‌ترین، امن‌ترین و سریع‌ترین شکل ممکن در اختیار شما قرار
+            دهیم، تا تمرکزتان فقط روی انتخاب بهترین محصولات باشد.
+          </p>
+          <p>
+            پرداخت سریع، ساده و امن در اپلیکیشن زی‌هوم
+            در زی‌هوم، فرایند پرداخت طوری طراحی شده که بدون نیاز به خروج از اپلیکیشن، بتوانید خرید خود را به‌راحتی و با
+            حداکثر امنیت انجام دهید. دیگر نیازی به وارد شدن به درگاه‌های بانکی جداگانه یا پر کردن اطلاعات تکراری نیست؛
+            همه‌چیز داخل خود اپلیکیشن انجام می‌شود، سریع، روان و بی‌دردسر.
+            با وارد کردن اطلاعات کارت بانکی‌تان، می‌توانید پرداخت را انجام دهید و این اطلاعات، تنها به‌صورت رمزنگاری‌شده
+            و ایمن در اختیار بانک قرار می‌گیرند. در دفعات بعد، کارت‌هایی که قبلاً استفاده کرده‌اید به‌صورت خودکار نمایش
+            داده می‌شوند تا فقط با یک انتخاب ساده، پرداخت را نهایی کنید. این فرایند باعث صرفه‌جویی در زمان و افزایش سرعت
+            خریدهای شما می‌شود.
+            همچنین در کنار کارت‌های بانکی، می‌توانید از کیف پول اختصاصی خود در اپلیکیشن نیز استفاده کنید. کافی‌ست آن را
+            یک‌بار شارژ کنید و از آن به‌عنوان روش پرداخت سریع و بدون نیاز به وارد کردن اطلاعات کارت بهره ببرید.
+            در صورتی که اطلاعات کارت شما تغییر کرده، به‌سادگی می‌توانید کارت جدید خود را اضافه کرده و جایگزین قبلی کنید.
+            اگر به هر دلیلی پرداخت شما ناموفق بود یا مبلغی از حساب شما کم شد اما سفارش ثبت نشد، نگران نباشید؛ مبلغ طی
+            حداکثر ۲۴ ساعت به حساب شما بازمی‌گردد.
+            در زی‌هوم ما تلاش کرده‌ایم تجربه‌ی پرداخت را به ساده‌ترین، امن‌ترین و سریع‌ترین شکل ممکن در اختیار شما قرار
+
+            دهیم، تا تمرکزتان فقط روی انتخاب بهترین محصولات باشد.
+
+          </p>
+
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- end modal10 responsiv -->
+  <!-- start modal11 responsiv -->
+
+  <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">فعال سازی کیف پول</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-4 px-3 px-sm-4 py-4">
+
+          <img src="./assets/img/home-img/logo-footer.png" class="img-fluid" style="max-width: 110px;" alt="زی هوم">
+
+          <p class="font14 mb-0">
+            کد تایید به شماره <span dir="ltr">۰۹۰۳۸۳۹۹۱۷۰</span> ارسال شده است
+          </p>
+
+          <div class="d-flex justify-content-center gap-1 gap-sm-2 harchi mx-auto" dir="ltr">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم اول">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم دوم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم سوم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم چهارم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم پنجم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم ششم">
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3 mx-auto harchi">
+            <button type="button" class="btn btn-outline-dark shadow-0 m-0 w-50 " data-mdb-ripple-init
+              data-mdb-dismiss="modal">
+              انصراف
+            </button>
+            <button type="button" id="resendBtn" class="btn btn-secondary w-50 shadow-0 m-0  " data-mdb-ripple-init
+              data-mdb-modal-init data-mdb-target="#modal12">
+              ارسال مجدد (<span id="resendTimer">۰۱:۵۵</span>)
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal11 responsiv -->
+
+  <!-- start modal12 responsiv -->
+
+  <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">فعال سازی کیف پول</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-4 px-3 px-sm-4 py-4">
+
+          <img src="./assets/img/home-img/logo-footer.png" class="img-fluid" style="max-width: 110px;" alt="زی هوم">
+
+          <p class="font14 mb-0">
+            کد تایید به شماره <span dir="ltr">۰۹۰۳۸۳۹۹۱۷۰</span> ارسال شده است
+          </p>
+
+          <div class="d-flex justify-content-center gap-1 gap-sm-2 harchi mx-auto" dir="ltr">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم اول">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم دوم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم سوم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم چهارم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم پنجم">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم ششم">
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3 mx-auto harchi">
+            <button type="button" class="btn bg-color text-light shadow-0 m-0 w-100 " data-mdb-ripple-init
+              data-mdb-dismiss="modal" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#modal13">
+              تایید
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal12 responsiv -->
+  <!-- start modal13 responsiv -->
+
+  <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">فعال سازی کیف پول</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-4 px-3 px-sm-4 py-4">
+
+          <img src="./assets/img/home-img/logo-footer.png" class="img-fluid" style="max-width: 110px;" alt="زی هوم">
+
+          <p class="font14 mb-0">
+            کد تایید به شماره <span dir="ltr">۰۹۰۳۸۳۹۹۱۷۰</span> ارسال شده است
+          </p>
+
+          <div class="d-flex justify-content-center gap-1 gap-sm-2 harchi mx-auto" dir="ltr">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم اول" placeholder="2">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم دوم" placeholder="2">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم سوم" placeholder="2">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم چهارم" placeholder="2">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم پنجم" placeholder="2">
+            <input type="text" inputmode="numeric" maxlength="1" class="code-input form-control text-center p-0"
+              aria-label="رقم ششم" placeholder="2">
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3 mx-auto harchi">
+            <!-- <button type="button" class="btn bg-color text-light shadow-0 m-0 w-100 " 
+             data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#modal14">
+              تایید
+            </button> -->
+            <button type="button" class="btn bg-color text-light shadow-0 w-100 " data-mdb-ripple-init
+              data-mdb-modal-init data-mdb-target="#modal14">
+              تایید
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal13 responsiv -->
+
+  <!-- start modal14 responsiv -->
+
+  <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">فعال سازی کیف پول</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-3 px-3 px-sm-4 py-4">
+
+          <img src="./assets/img/profile/Group 9488.svg" class="img-fluid" style="max-width: 56px;" alt="">
+
+          <span class="font14 text-red-color">کیف پول شما فعال نشد.</span>
+
+          <p class="font14 text-muted mb-0">
+            کد وارد شده صحیح نمی باشد، برای تایید مجدد، درخواست کد جدید بدهید.
+          </p>
+
+          <button type="button" class="btn bg-color text-white shadow-0 m-0 mt-2 px-4 text-nowrap" data-mdb-ripple-init
+            data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#modal15">
+            ارسال دوباره کد
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal14 responsiv -->
+
+
+  <!-- start modal15 responsiv -->
+
+  <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">فعال سازی کیف پول</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-3 px-3 px-sm-4 py-4">
+
+          <img src="./assets/img/profile/yellow.svg" class="img-fluid" style="max-width: 56px;" alt="">
+
+          <span class="font14 text-unknown">کیف پول شما فعال نشد.</span>
+
+          <p class="font14 mb-0">
+            مدت اعتبار این کد به پایان رسیده است ، لطفا کد جدید دریافت کنید
+          </p>
+
+          <button type="button" class="btn bg-color text-white shadow-0 m-0 mt-2 px-4 text-nowrap" data-mdb-ripple-init
+            data-mdb-modal-init data-mdb-target="#modal16">
+            ارسال دوباره کد
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal15 responsiv -->
+
+
+  <!-- start modal16 responsiv -->
+
+  <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">فعال سازی کیف پول</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center text-center gap-3 px-3 px-sm-4 py-4">
+
+          <img src="./assets/img/profile/green.svg" class="img-fluid" style="max-width: 56px;" alt="">
+
+          <span class="font14" style="color: #22A06B;">کیف پول شما فعال شد.</span>
+
+          <p class="font14 text-muted mb-0">
+            حالا می‌توانید به راحتی از موجودی کیف پول خود برای پرداخت‌های سریع و آسان در زی هوم استفاده کنید.
+          </p>
+
+          <a href="" class="btn bg-color text-white shadow-0 m-0 mt-2 px-4 w-100 w-sm-auto text-nowrap"
+            data-mdb-ripple-init data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#modal17">
+            بازگشت به سایت پذیرنده (<span id="redirectTimer">۰۱:۵۵</span>)
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal16 responsiv -->
+
+  <!-- start modal17 responsiv -->
+
+  <div class="modal fade" id="modal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font16" id="exampleModalLabel">افزایش موجودی</h5>
+          <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column gap-4 px-3 px-sm-4 py-4">
+
+          <label for="chargeAmount" class="font16 text-black mb-0">مبلغ موردنظر جهت افزایش موجودی را وارد کنید.</label>
+
+          <div class="input-group w-100 py-1  border rounded-2 ">
+            <input type="text" id="chargeAmount" inputmode="numeric" class="form-control border-0 font14"
+              placeholder="مبلغ دلخواه">
+            <span class="input-group-text font14 border-0 text-black bg-white">تومان</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-2 rounded-3 p-3 font12" style="background-color: #F0F1F1;">
+            <img src="./assets/img/profile/Warning.svg" style="width: 24px;" alt="">
+            <span>مبلغ وارد شده باید ۱۰۰،۰۰۰ تا ۲۰۰،۰۰۰،۰۰۰ ریال باشد.</span>
+          </div>
+
+          <div class="row g-2">
+            <div class="col-12 col-sm-4">
+              <button type="button" class="amount-btn active w-100 py-2 font14">۵،۰۰۰،۰۰۰ ریال</button>
+            </div>
+            <div class="col-6 col-sm-4">
+              <button type="button" class="amount-btn w-100 py-2 font14">۵۰۰،۰۰۰ ریال</button>
+            </div>
+            <div class="col-6 col-sm-4">
+              <button type="button" class="amount-btn w-100 py-2 font14">۲،۰۰۰،۰۰۰ ریال</button>
+            </div>
+          </div>
+
+          <div class="row g-2">
+            <div class="col-12 col-sm-6">
+              <button type="button" class="btn btn-outline-dark shadow-0 m-0 w-100 text-nowrap rounded-2 font14"
+                data-mdb-ripple-init data-mdb-dismiss="modal">انصراف</button>
+            </div>
+            <div class="col-12 col-sm-6">
+              <button type="button" class="btn bg-color text-white shadow-0 m-0 w-100 text-nowrap rounded-2 font14"
+                data-mdb-ripple-init>افزایش موجودی کیف پول</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal17 responsiv -->
+
+
+
+
+
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+
+
+
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.3.0/mdb.umd.min.js"></script> -->
+  <!-- <script src="assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script> -->
+
+  <script src="assets/node_modules/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.js"></script>
+  <script>jalaliDatepicker.startWatch();</script>
+  <script src="./assets/js/profile.js"></script>
+
+  <script src="./partials/header.js"></script>
+  <script src="./partials/footer.js"></script>
+  <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
+
+  <!-- <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script> -->
+
+  <!-- <script src="include.js"></script> -->
+</body>
+
+</html>

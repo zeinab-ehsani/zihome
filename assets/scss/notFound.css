@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: IRANYekan;
+  src: url(../font/IRANYekanXFaNum-Regular.woff2);
+}
+body {
+  font-family: IRANYekan;
+}
+
+div.main {
+  margin: 188px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+a.btn-back {
+  background-color: #DC2655;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 24px;
+  border: none;
+  text-decoration: none;
+}
+
+.details {
+  margin-top: 50px;
+}
+.details > h1 {
+  font-size: 24px;
+}
+.details > p {
+  font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+  color: #4B4B4B;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 540px) {
+  div.main > img {
+    width: 80vw;
+    margin: 0px auto;
+    display: block;
+  }
+}/*# sourceMappingURL=notFound.css.map */

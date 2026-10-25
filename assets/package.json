@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@majidh1/jalalidatepicker": "^1.0.0",
+    "jb-date-input": "^7.0.6",
+    "mdb-ui-kit": "^9.3.0"
+  }
+}

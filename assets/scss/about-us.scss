@@ -1,0 +1,244 @@
+@import "../../media";
+@font-face {
+    font-family: IRANYekan;
+    src: url(../font/IRANYekanXFaNum-Regular.woff2);
+}
+
+$color-red: #DC2655;
+$font-12: clamp(0.625rem, 0.5833rem + 0.1852vw, 0.75rem);
+$font-14: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
+$font-16: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
+
+.time-line {
+            margin-top:24px;
+
+    >div {
+        width: 85%;
+        padding-right: 0;
+        margin-top: 30px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        font-family: IRANYekan;
+
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::after {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+    content: "/";
+}
+section.hero-about {
+    background-image: url(../img/about-us/Frame\ 1890166319.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    >h5 {
+        font-size: clamp(2rem, 1.273rem + 3.636vw, 4rem);
+        text-align: center;
+        color: white;
+    }
+
+    >img {
+        width: clamp(12.5rem, 10.2857rem + 11.0714vw, 20.25rem)
+    }
+}
+p.title-contact {
+    font-size: clamp(1rem, 0.818rem + 0.909vw, 1.5rem);
+    color: $color-red;
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+p.paragraf-contact {
+    font-size: $font-16;
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 9px;
+      text-align: justify;
+}
+h5.title{
+margin-top: 96px;
+margin-bottom: 48px;
+}
+section.support{
+    width: 85%;
+    margin: 0px auto;
+
+    gap:$font-16;
+    >div{
+        border: 1px solid #E1E2E3;
+        border-radius: 16px;
+        border-bottom: 4px solid #E1E2E3;
+        padding:16px  24px ;
+        text-align: center;
+        height: 218px;
+width: clamp(12.5rem, 10.5714rem + 9.6429vw, 18rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >p{
+            font-size: $font-14;
+        }
+    }
+}
+section.about-map{
+ background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+       width: 85%;
+    max-width: 806px;
+    aspect-ratio: 806 / 560;background-image: url("../img/about-us/map.svg");
+    margin: 0px auto;
+    padding: 184px 182px;
+     margin-top: clamp(4rem, 2.9286rem + 5.3571vw, 7.75rem);
+    margin-bottom: clamp(3rem, 2.0714rem + 4.6429vw, 6.25rem);
+
+    >p{
+        font-size:24px;
+        color: #292C2D;
+        text-align: center;
+    }
+}
+.our-goals{
+    width: 85%;
+    margin: 0px auto;
+    >p.goals-title{
+        font-size: $font-16;
+        font-weight: bold;
+    }
+    >p.goals-text {
+        font-size: $font-16;
+          text-align: justify;
+    }
+}
+
+@include media(768) {
+section.hero-about {
+height: 400px!important;
+
+
+}
+section.support{
+    width: 85%;
+    margin: 0px auto;
+
+    gap:$font-16;
+    >div{
+        border: 1px solid #E1E2E3;
+        border-radius: 16px;
+        border-bottom: 4px solid #E1E2E3;
+        padding:16px  24px ;
+        text-align: center;
+        height: 200px!important;
+        width: 288px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+}
+@include media(540) {
+section.hero-about {
+height:320px!important;
+
+}
+section.support{
+    width: 85%;
+    margin: 0px auto;
+
+    gap: 8px!important;
+    >div{
+        border: 1px solid #E1E2E3;
+        border-radius: 16px;
+        border-bottom: 4px solid #E1E2E3;
+        padding:16px  24px ;
+        text-align: center;
+        height:160px!important;
+        // width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >img{
+            width: 80%;
+        }
+// >p{
+
+
+// }
+    }
+}
+.about-map{
+    margin: 30px 20px!important;
+    padding: 60px 15px!important;
+    margin-bottom:0px!important;
+}
+
+
+
+
+}
+@include media(0) {
+section.hero-about {
+height:	260px!important;
+
+}
+section.support{
+    width: 85%;
+    margin: 0px auto;
+
+    gap: 8px!important;
+    flex-wrap: wrap;
+    >div{
+        border: 1px solid #E1E2E3;
+        border-radius: 16px;
+        border-bottom: 4px solid #E1E2E3;
+        padding:16px  24px ;
+        text-align: center;
+        height:160px!important;
+        // width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 140px!important;
+
+        >img{
+            width: 80%;
+        }
+
+
+
+}
+}
+.about-map{
+    margin: 30px 20px!important;
+    padding: 60px 15px!important;
+    margin-bottom:0px!important;
+}
+
+}
