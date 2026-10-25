@@ -558,7 +558,6 @@ $similar-red: #de2557;
 @font-face {
     font-family: IRANYekan;
     src: url(../font/IRANYekanXFaNum-Regular.woff2);
-    // src: url(./assets/font/IRANYekanXFaNum-Regular.woff2);
 }
 
 $color-red: #DC2655;
@@ -742,7 +741,6 @@ $vendor-border: #e3e3e3;
         }
     }
 
-    // دسکتاپ: کارت موقع اسکرول بالای صفحه بچسبه
     @media (min-width: 992px) {
         position: sticky;
         top: 16px;
@@ -768,7 +766,6 @@ $main-red: #de2557;
     background: #fff;
     padding: clamp(16px, 0.5rem + 2vw, 32px);
 
-    // ---------- گالری ----------
     .gallery {
         display: flex;
         gap: 16px;
@@ -820,7 +817,6 @@ $main-red: #de2557;
         align-items: center;
         justify-content: center;
         aspect-ratio: 1 / 1;
-        // border: 1px solid $main-border;
         border-radius: 8px;
         overflow: hidden;
 
