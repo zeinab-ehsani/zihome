@@ -46,7 +46,6 @@ section.banner {
     color: white;
     gap: 24px;
 
-    // height: 252px;
     margin: 0px auto;
 
     >div.banner-right {
@@ -152,7 +151,6 @@ div.container-blog {
     margin-top: 50px;
     gap: 37px;
     flex-wrap: nowrap;
-    // align-items: center;
 }
 
 section.blog-sidebar>.first {
@@ -161,7 +159,6 @@ section.blog-sidebar>.first {
 
 section.blog-sidebar {
     flex: 1 0 288px;
-    width: 228px;
 
     >ul {
         display: flex;
@@ -170,7 +167,6 @@ section.blog-sidebar {
         border: 1px solid #D1D4D4;
         border-radius: 16px;
         padding: 16px 24px;
-        // padding-bottom: 130px!important;
 
 
         >li {
@@ -193,9 +189,7 @@ div.new-blog {
 
     >div {
         border-bottom: 1px solid #D1D4D4;
-        // width: 80%;
         flex: 1 1 auto;
-        // width: 80%; ← این رو حذف کن
         margin: 0 12px;
 
     }
@@ -214,19 +208,14 @@ div.new-blog {
 div.parent-card-blog {
     flex: 1;
     min-width: 0;
-    // gap: 24px;
-    // width:288px;
     flex-wrap: wrap !important;
 }
 
 div.card-blog {
     border: 1px solid #C2C5C6;
     border-bottom: 4px solid #C2C5C6;
-    // flex: 1;
     border-radius: 16px;
     width: 288px !important;
-    //    flex: 1 1 0;
-    // min-width: 0; 
     margin-bottom: 24px;
 
 
@@ -262,7 +251,6 @@ div.card-blog {
 li.sidebar-popular-reads {
     border: 1px solid #C2C5C6;
     border-radius: 16px;
-    // padding: 16px;
 
     gap: 12px;
 
@@ -309,19 +297,9 @@ div.banner-heart {
     background-repeat: no-repeat;
     background-size: cover;
     height: 252px;
-    // background-color: blue;
     padding: 48px 108px;
-    //   aspect-ratio: 1224 / 252;
     border-radius: 16px;
 
-    // width: 100%;
-    // >img{
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: cover;
-    //         display: block;
-
-    // }
     >h6 {
         font-size: 24px;
         color: white;
@@ -356,7 +334,6 @@ div.visual-sidbar {
         border: 1px solid #D1D4D4;
         border-radius: 16px;
         padding: 16px 24px;
-        // padding-bottom: ;
 
         >li {
             font-size: $font-14;
@@ -368,9 +345,6 @@ div.visual-sidbar {
     }
 }
 
-// .banner-heart picture {
-//   display: contents;
-// }
 .visual-magazine {
     width: 85%;
     margin: 0px auto;
@@ -382,28 +356,19 @@ div.visual-sidbar {
 div.visual-read {
     border: 1px solid #D1D4D4;
     border-radius: 16px;
-    // >img{
-    //     height: 416px;
-    //     width:912px!important;
-    // }
 
     >span {
         padding: 1.5rem 1.5rem;
-        // background-color: red;
         display: inline-block;
 
         >p {
             font-size: $font-14;
             color: #151617;
-            // margin-top: 1.5rem;
-            // padding-right: 24px;
         }
 
         >span {
             font-size: $font-14;
             color: #151617;
-            // padding-right: 24px;
-            // padding-left: 24px;
         }
 
         >div {
@@ -423,10 +388,18 @@ div.visual-read {
 
 }
 
+#timer-left {
+    direction: ltr;
+}
+
+#timer {
+    direction: ltr;
+    text-align: right;
+}
+
 @include media(1200) {
     .container-blog {
         gap: 10px !important;
-        // background-color: #DC2655!important;
 
     }
 
@@ -448,8 +421,7 @@ div.visual-read {
 
         >div.card-blog {
             margin-bottom: 10px !important;
-            // width: 200px!important;
-            width: 220px !important;
+            width: clamp(200px, 18.3vw, 280px) !important;
 
             >img {
                 height: auto !important;
@@ -466,6 +438,14 @@ div.visual-read {
         padding-bottom: 5px !important;
     }
 
+    div.banner-right {
+        background-position: left center !important;
+    }
+
+    div.banner-left {
+        background-position: left center !important;
+    }
+
 
 }
 
@@ -479,9 +459,7 @@ div.visual-read {
         background-repeat: no-repeat;
         background-size: cover;
         height: 252px;
-        // background-color: blue;
         padding: 48px 108px;
-        //   aspect-ratio: 1224 / 252;
         border-radius: 16px;
 
 
@@ -490,7 +468,6 @@ div.visual-read {
 
     .container-blog {
         gap: 10px !important;
-        // background-color: #DC2655!important;
 
     }
 
@@ -531,7 +508,6 @@ div.visual-read {
     }
 
     .first {
-        // padding-bottom: 78px !important;
         padding-top: 30px !important;
     }
 
@@ -545,6 +521,13 @@ div.visual-read {
     }
 
 
+    div.banner-right {
+        background-position: left center !important;
+    }
+
+    div.banner-left {
+        background-position: left center !important;
+    }
 
 
 
@@ -583,7 +566,6 @@ div.visual-read {
 
     .parent-card-blog {
 
-        // justify-content: space-evenly !important;
 
         gap: 0px !important;
 
@@ -593,8 +575,7 @@ div.visual-read {
 
         >div.card-blog {
             margin-bottom: 10px !important;
-            width: 237px !important;
-
+            width: clamp(237px, 31vw, 320px) !important;
 
             >img {
                 height: auto !important;
@@ -613,7 +594,24 @@ div.visual-read {
         padding-bottom: 10px !important;
 
         >li {
+
             padding: 5px 5px !important;
+
+            >img {
+                width: 18px !important;
+
+            }
+
+            >svg {
+                width: 18px !important;
+            }
+
+            >span {
+                >img {
+                    width: 16px;
+                }
+
+            }
         }
     }
 
@@ -647,9 +645,6 @@ div.visual-read {
             flex-wrap: wrap !important;
             flex-direction: row !important;
 
-            // >li:nth-last-child(1) {
-            //     width: 100% !important;
-            // }
 
             >li:nth-of-type(1) {
                 width: 100% !important;
@@ -657,16 +652,23 @@ div.visual-read {
 
             >li {
                 width: 45%;
-                // flex-direction: column !important;
             }
-            >a{
-                // display:block!important;
-                // background-color: red;
+
+            >a {
                 width: 100%;
 
             }
-            padding-bottom: 10px!important;
+
+            padding-bottom: 10px !important;
         }
+    }
+
+    div.banner-right {
+        background-position: left center !important;
+    }
+
+    div.banner-left {
+        background-position: left center !important;
     }
 
 }
@@ -699,7 +701,6 @@ div.visual-read {
                 width: 100% !important;
                 flex-direction: row !important;
                 flex-wrap: wrap !important;
-                // background-color: #858C8D!important;
                 padding: 10px 15px !important;
 
                 >li {
@@ -720,7 +721,7 @@ div.visual-read {
             }
 
             >.card-blog {
-                width: 220px !important;
+                width: clamp(220px, 7.5vw + 180px, 237px) !important;
                 margin-bottom: 0px !important;
 
                 >img {
@@ -778,7 +779,6 @@ div.visual-read {
         >div {
             width: 90%;
 
-            // background-size: contain!important;
             >div {
                 >h2 {
                     >img {
@@ -800,7 +800,6 @@ div.visual-read {
                 width: 100% !important;
                 flex-direction: row !important;
                 flex-wrap: wrap !important;
-                // background-color: #858C8D!important;
                 padding: 10px 15px !important;
                 justify-content: space-evenly !important;
 

@@ -120,7 +120,6 @@ section.blog-sidebar > .first {
 
 section.blog-sidebar {
   flex: 1 0 288px;
-  width: 228px;
 }
 section.blog-sidebar > ul {
   display: flex;
@@ -308,6 +307,15 @@ div.visual-read > span > div > a {
   color: #3E4344;
 }
 
+#timer-left {
+  direction: ltr;
+}
+
+#timer {
+  direction: ltr;
+  text-align: right;
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .container-blog {
     gap: 10px !important;
@@ -324,7 +332,7 @@ div.visual-read > span > div > a {
   }
   .parent-card-blog > div.card-blog {
     margin-bottom: 10px !important;
-    width: 220px !important;
+    width: clamp(200px, 18.3vw, 280px) !important;
   }
   .parent-card-blog > div.card-blog > img {
     height: auto !important;
@@ -334,6 +342,12 @@ div.visual-read > span > div > a {
   }
   .list-end {
     padding-bottom: 5px !important;
+  }
+  div.banner-right {
+    background-position: left center !important;
+  }
+  div.banner-left {
+    background-position: left center !important;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -384,6 +398,12 @@ div.visual-read > span > div > a {
   .list-end {
     padding-bottom: 5px !important;
   }
+  div.banner-right {
+    background-position: left center !important;
+  }
+  div.banner-left {
+    background-position: left center !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   section.banner {
@@ -407,7 +427,7 @@ div.visual-read > span > div > a {
   }
   .parent-card-blog > div.card-blog {
     margin-bottom: 10px !important;
-    width: 237px !important;
+    width: clamp(237px, 31vw, 320px) !important;
   }
   .parent-card-blog > div.card-blog > img {
     height: auto !important;
@@ -421,6 +441,15 @@ div.visual-read > span > div > a {
   }
   .first > li {
     padding: 5px 5px !important;
+  }
+  .first > li > img {
+    width: 18px !important;
+  }
+  .first > li > svg {
+    width: 18px !important;
+  }
+  .first > li > span > img {
+    width: 16px;
   }
   .second {
     padding: 16px 12px !important;
@@ -455,6 +484,12 @@ div.visual-read > span > div > a {
   }
   div.visual-sidbar > ul.list-end {
     padding-bottom: 10px !important;
+  }
+  div.banner-right {
+    background-position: left center !important;
+  }
+  div.banner-left {
+    background-position: left center !important;
   }
 }
 @media screen and (min-width: 540px) and (max-width: 767.98px) {
@@ -495,7 +530,7 @@ div.visual-read > span > div > a {
     display: none;
   }
   .main-left > .parent-card-blog > .card-blog {
-    width: 220px !important;
+    width: clamp(220px, 7.5vw + 180px, 237px) !important;
     margin-bottom: 0px !important;
   }
   .main-left > .parent-card-blog > .card-blog > img {
