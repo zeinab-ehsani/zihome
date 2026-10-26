@@ -4721,6 +4721,10 @@ flex-direction: column!important;
         }
 
     }
+    .footer-end{
+    margin-bottom: 64px!important;
+}
+
 }
 
 @include media(0) {
@@ -5379,17 +5383,10 @@ height: auto!important;
     .mobile-menu {
         display: block !important;
 
-        >div {
-            >div {
-                // >a{
-                //     // font-size: 5px!important;
-                //     // color: red!important;
-                //     // >i{
-
-                //     }
-            }
-        }
     }
 
+.footer-end{
+    margin-bottom: 64px!important;
+}
 
 }

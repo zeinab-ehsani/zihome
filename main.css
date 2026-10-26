@@ -3093,6 +3093,9 @@ p.text-fade {
     font-size: 14px;
     color: black;
   }
+  .footer-end {
+    margin-bottom: 64px !important;
+  }
 }
 @media screen and (max-width: 540px) {
   div.ads {
@@ -3497,5 +3500,8 @@ p.text-fade {
   }
   .mobile-menu {
     display: block !important;
+  }
+  .footer-end {
+    margin-bottom: 64px !important;
   }
 }/*# sourceMappingURL=main.css.map */
