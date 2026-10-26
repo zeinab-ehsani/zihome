@@ -248,6 +248,9 @@ section.main-cart > div.left-cart > div.bottom {
     padding-bottom: 12px !important;
     padding-top: 12px !important;
   }
+  .left-cart-buy {
+    width: 97% !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .cart-item > div > img {
@@ -281,6 +284,9 @@ section.main-cart > div.left-cart > div.bottom {
     padding-left: 0px !important;
   }
   .right-cart {
+    width: 97% !important;
+  }
+  .left-cart-buy {
     width: 97% !important;
   }
   .left-cart {
@@ -320,6 +326,9 @@ section.main-cart > div.left-cart > div.bottom {
     padding-left: 0px !important;
   }
   .right-cart {
+    width: 97% !important;
+  }
+  .left-cart-buy {
     width: 97% !important;
   }
   .left-cart {
