@@ -2224,12 +2224,13 @@ p.text-fade {
   font-size: clamp(10px, 3.2vw, 16px);
 }
 .mobile-menu > div > div > a {
-  color: black;
+  color: #292C2D;
   direction: ltr !important;
   font-size: clamp(10px, 3.2vw, 16px);
 }
 .mobile-menu > div > div > a > i {
   margin-left: 5px;
+  color: #292C2D;
 }
 
 .show {
@@ -2425,6 +2426,12 @@ p.text-fade {
   section.reading {
     gap: 1px !important;
     justify-content: space-between;
+  }
+  .text-end > section {
+    flex-direction: column !important;
+  }
+  .support {
+    margin-top: 8px !important;
   }
   .footer-trust {
     justify-content: space-around !important;

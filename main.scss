@@ -3021,21 +3021,17 @@ div.detail {
 }
 
 footer {
-    // background-image: url("./assets/img/home-img/footer2.svg");
-    // background-position:bottom;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 72px;
     margin-top: 80px;
     background-color: #f0f1f1;
-    // background-color: red;
     position: relative;
 
     >section {
 
         width: 85%;
         margin: 0px auto;
-        // background-color: #745F38;
 
 
         >div {
@@ -3047,12 +3043,10 @@ footer {
                         font-size: 14px !important;
                         font-weight: 600;
                         color: #292C2D;
-                        // color: red;
                     }
 
                     >p.details-about {
                         font-size: 14px !important;
-                        // color: #292C2D;
                     }
                 }
 
@@ -3085,45 +3079,6 @@ html {
     scroll-behavior: smooth !important;
 }
 
-// body{
-//     background-color: black!important;
-// }
-// .back-to-top {
-//     position: absolute;
-//     top: -30px;
-//     left: 50%;
-//     // transform: translateX(-50%);
-
-//     width: 124px;
-//     height: 60px;
-
-//     background-color: #7d3030;
-//     border-radius: 0 0 50px 50px ;
-
-//     z-index: 2;
-// }.back-to-top__btn {
-//     width: 48px;
-//     height: 48px;
-
-//     margin-top: 12px;
-
-//     border: none;
-//     background: transparent;
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     cursor: pointer;
-// }
-
-// .back-to-top__icon {
-//     font-size: 22px;
-//     line-height: 1;
-//     color: #676F71;
-
-//     transform: translateY(2px);
-// }
 
 
 .scroll-top-btn {
@@ -3157,7 +3112,7 @@ p.text-fade {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    max-height: 5.5em; // تقریباً 3 خط
+    max-height: 5.5em; 
     overflow: hidden;
     font-size: 14px;
 
@@ -3213,8 +3168,6 @@ p.text-fade {
         justify-content: space-evenly;
         border-radius: 16px;
         background-color: white;
-        // min-width: 0;
-        // flex: 1;
 
         >div.dash-line {
             flex: 1;
@@ -3230,7 +3183,6 @@ p.text-fade {
         >span {
             >p:nth-of-type(1) {
                 font-size: 1rem;
-                // color: red;
                 margin-bottom: 0px !important;
             }
 
@@ -3278,8 +3230,6 @@ p.text-fade {
     width: 100vw !important;
     position: fixed;
     bottom: 0;
-    // left: 0!important;
-    // right: 0!important;
     z-index: 1000;
     background-color: white;
 
@@ -3295,12 +3245,14 @@ p.text-fade {
         >div {
             >a {
 
-                color: black;
+                color:#292C2D;
                 direction: ltr !important;
                 font-size: clamp(10px, 3.2vw, 16px);
 
                 >i {
                     margin-left: 5px;
+                                    color:#292C2D;
+
                 }
             }
         }
@@ -3496,13 +3448,6 @@ p.text-fade {
             }
         }
 
-        >div:nth-of-type(3) {
-            >a {
-                >div:nth-of-type(1) {
-                    // margin-bottom: 25px !important;
-                }
-            }
-        }
 
         >div:nth-of-type(4) {
             >a {
@@ -3517,7 +3462,6 @@ p.text-fade {
 
 
     .swiper2 {
-        // background-color: #007aff;
         padding: 16px 12px;
 
         >a {
@@ -3531,7 +3475,6 @@ p.text-fade {
         }
 
         >div:nth-of-type(1) {
-            // background-color: #737272;
             margin-bottom: 20px !important;
 
             >span:nth-of-type(2) {
@@ -3544,7 +3487,6 @@ p.text-fade {
 
         >div:nth-of-type(2) {
             margin-top: 0px !important;
-            // background-color: green;
 
             >span:nth-of-type(2) {
                 width: 2.8rem;
@@ -3596,9 +3538,6 @@ p.text-fade {
         }
     }
 
-    div.line {
-        // width: 70% !important;
-    }
 
     div.spring {
         padding: 1.5rem;
@@ -3624,7 +3563,6 @@ p.text-fade {
 
     div.parenttabs {
 
-        // flex-shrink: 0;
         >div.tab1 {
             >div {
                 gap: 4px !important;
@@ -3639,7 +3577,6 @@ p.text-fade {
 
                         >span {
                             >span:nth-of-type(2) {
-                                // flex-shrink: 0;
                                 font-size: 0.8rem;
 
                             }
@@ -3664,11 +3601,14 @@ p.text-fade {
         justify-content: space-between;
     }
 
-    .card-reading {
-        // width: 24%;
+.text-end{
+    >section{
+flex-direction: column!important;
     }
-
-
+}
+.support{
+    margin-top: 8px!important;
+}
     .footer-trust {
         justify-content: space-around !important;
 

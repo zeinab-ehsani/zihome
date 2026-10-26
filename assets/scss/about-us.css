@@ -60,7 +60,7 @@ p.title-contact {
   color: #DC2655;
   width: 85%;
   margin: 0px auto;
-  margin-top: 50px;
+  margin-top: clamp(20px, 5vw, 50px);
 }
 
 p.paragraf-contact {
