@@ -27,10 +27,6 @@ $font-16: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
     }
 }
 
-// .breadcrumb-item+.breadcrumb-item {
-//     padding-right: 0.5rem;
-//     padding-left: 0;
-// }
 
 .breadcrumb-item:nth-child(2)::after {
     float: right;
@@ -59,8 +55,6 @@ section.main-compare {
             padding: 20px 26px;
             height: 268px;
 
-            // width: clamp(240px, 22vw, 288px);
-            // height: clamp(224px, 20vw, 268px);
         }
         >.fill{
             width: auto;
@@ -143,13 +137,6 @@ section.text-details{
     >p{
    text-align: justify    }
 }
-// .card-modal{
-//     border: 1px solid ;
-//     border-bottom: 3px solid ;
-//     border-radius: 16px;
-//     padding: ;
-
-// }
 .product-card {
   border: 1px solid #C2C5C6!important;
   border-bottom:4px solid  #C2C5C6!important;
@@ -235,6 +222,35 @@ section.text-details{
 
 
 
+@include media(768) {
+
+.modal-body{
+    >span{
+        margin-right: 5px!important;
+
+font-size: 12px!important;
+    }
+}
+.product-card{
+    >img{
+        height: auto!important;
+    }
+}
+.parent-modal-card{
+>div.product{
+    padding: 2px!important;
+}
+.product-card{
+    padding: 0px !important;
+}
+}
+.product-info{
+    padding:5px!important;
+}
+.product-title{
+    font-size: 10px!important;
+}
+}
 
 
 
@@ -245,28 +261,22 @@ section.text-details{
 @include media(540) {
 
 .compare-card{
-    // height: auto!important;
-    // width: auto!important;
             padding: 20px 10px!important;
 
-}
-.fill{
-
-    >div{
-            >img{
-
-        // width: 15%!important;
-    }
-
-    }
-    >img{
-
-    }
 }
 
 }
 @include media(0) {
+.parent-modal-card{
+flex-wrap: wrap!important;
+>div{
+  flex-wrap: wrap!important;
+  width: 50%!important;
+padding: 3px!important; 
 
+}
+
+}
 div.compare-card{
                 padding: 20px 10px!important;
                 gap: 0px!important;
@@ -280,15 +290,15 @@ flex-wrap: wrap!important;
 div.fill{
     width: 100%!important;
     height: auto!important;
-    >div{
-        // flex-direction: column!important;
-        >img{
-        }
-    }
 }
 .empty{
-    // width: auto!important;
     width: 100%!important;
+}
+.product-info{
+    >div:nth-of-type(1){
+        flex-direction: column-reverse!important;
+     align-items:start!important;
+    }
 }
 }
     
