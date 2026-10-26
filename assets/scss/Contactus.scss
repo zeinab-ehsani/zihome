@@ -20,10 +20,10 @@ $font-14: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
 $font-16: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);
 
 .time-line {
+margin-top: clamp(16px, 3vw, 24px);
     >div {
         width: 85%;
         padding-right: 0;
-        margin-top: 24px;
     }
 }
 
@@ -67,7 +67,8 @@ p.title-contact {
     color: $color-red;
     width: 85%;
     margin: 0px auto;
-    margin-top: 50px;
+  margin-top: clamp(10px, 4vw,0px);
+
 }
 
 p.paragraf-contact {
@@ -145,10 +146,10 @@ div.form-text {
     margin-top: 82px;
 }
 
-.send {
-    // background-color: $color-red !important;
-    // color: white !important;
-    // padding: 8px 16px !important;
+.sending {
+    background-color: $color-red !important;
+    color: white !important;
+    padding: 8px 16px !important;
 
 
 }
@@ -208,6 +209,30 @@ div.map-details {
     }
 }
 
+@include media(1200) {
+    .hero-contact {
+  height: 600px !important;
+    }
+    }
+
+
+
+@include media(992) {
+    .hero-contact {
+  height: 500px !important;
+    }
+
+
+
+
+}
+
+@include media(768) {
+    .hero-contact {
+  height: 420px !important;
+    }
+
+}
 @include media(540) {
     .hero-contact {
         height: 300px !important;
@@ -255,7 +280,10 @@ div.map-details {
     }
 
     .pelatform {
+        width: 100%!important;
         margin: 0px 0px !important;
+        margin-top: 5px!important;
+        justify-content: center!important;
         >div.media {
             flex-wrap: nowrap;
             >a {
@@ -266,7 +294,10 @@ div.map-details {
 
         >span {
             margin-left: 5px !important;
+            font-size: 12px!important;
         }
     }
-
+.btn-question{
+    padding: 4px 8px!important;
+}
 }

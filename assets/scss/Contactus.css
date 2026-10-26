@@ -9,10 +9,12 @@
   font-family: IRANYekan;
   src: url(../font/IRANYekanXFaNum-Regular.woff2);
 }
+.time-line {
+  margin-top: clamp(16px, 3vw, 24px);
+}
 .time-line > div {
   width: 85%;
   padding-right: 0;
-  margin-top: 24px;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -53,7 +55,7 @@ p.title-contact {
   color: #DC2655;
   width: 85%;
   margin: 0px auto;
-  margin-top: 50px;
+  margin-top: clamp(10px, 4vw, 0px);
 }
 
 p.paragraf-contact {
@@ -126,6 +128,12 @@ div.form-text {
   margin-top: 82px;
 }
 
+.sending {
+  background-color: #DC2655 !important;
+  color: white !important;
+  padding: 8px 16px !important;
+}
+
 section.map {
   text-align: center;
   border: 1px solid #D1D4D4;
@@ -176,6 +184,21 @@ div.map-details {
   font-size: clamp(0.75rem, 0.7083rem + 0.1852vw, 0.875rem);
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .hero-contact {
+    height: 600px !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-contact {
+    height: 500px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-contact {
+    height: 420px !important;
+  }
+}
 @media screen and (min-width: 540px) and (max-width: 767.98px) {
   .hero-contact {
     height: 300px !important;
@@ -209,7 +232,10 @@ div.map-details {
     color: #A4A9AA;
   }
   .pelatform {
+    width: 100% !important;
     margin: 0px 0px !important;
+    margin-top: 5px !important;
+    justify-content: center !important;
   }
   .pelatform > div.media {
     flex-wrap: nowrap;
@@ -219,5 +245,9 @@ div.map-details {
   }
   .pelatform > span {
     margin-left: 5px !important;
+    font-size: 12px !important;
+  }
+  .btn-question {
+    padding: 4px 8px !important;
   }
 }/*# sourceMappingURL=Contactus.css.map */

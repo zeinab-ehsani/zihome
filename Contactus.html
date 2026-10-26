@@ -7,6 +7,7 @@
     <title>Contactus</title>
     <link rel="stylesheet" href="./assets/scss/Contactus.css">
     <link rel="stylesheet" href="./assets/node_modules/mdb-ui-kit/css/mdb.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./main.css">
 
@@ -45,14 +46,12 @@
     <form>
         <p class="title-form">فرم تماس زی هوم</p>
         <div class="question-faq d-flex justify-content-between">
-            <span>لطفا قبل از تماس یا ارسال ایمیل، ابتدا <a href=""> سوالات متداول</a> رامشاهده کنید .</span>
+            <span>لطفا قبل از تماس یا ارسال ایمیل، ابتدا <a href="./faq.html"> سوالات متداول</a> رامشاهده کنید .</span>
             <button class="btn-question">سوالات متداول</button>
         </div>
-        <!-- 2 column grid layout with text inputs for the first and last names -->
 
 
 
-        <!-- Submit button -->
         <form class="contact-form" dir="rtl">
             <div class="row g-3 mb-3">
                 <div class="col-md-6">
@@ -84,7 +83,7 @@
 
             <div class="mb-3 col-md-6">
                 <label for="phone" class="form-label">شماره تماس <span class="text-danger">*</span></label>
-                <input type="tel" id="phone" class="form-control" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required />
+                <input type="tel" id="phone" class="form-control text-end" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required />
             </div>
 
             <div class="mb-3">
@@ -95,12 +94,11 @@
             <div class="mb-4 add">
                 <div class="form-text">حداکثر ۵ تصویر حداکثر یک مگابایت، یک ویدیو MP4 حداکثر ۵۰ مگابایت</div>
 
-                <!-- <label for="file" class="form-label">افزودن فایل</label> -->
                 <input type="file" id="file" class="form-control add-file" multiple placeholder="انتخاب فایل" />
             </div>
 
             <div class="d-flex flex-row-reverse">
-                <button type="submit" class="btn send">ثبت و ارسال</button>
+                <button type="submit" class="btn sending">ثبت و ارسال</button>
             </div>
         </form>
     </form>
@@ -182,11 +180,10 @@
     <div id="footer-placeholder"></div>
 
 
+    <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
 
     <script src="./partials/header.js"></script>
     <script src="./partials/footer.js"></script>
-    <!-- <script src="./main.css"></script> -->
-    <script src="./assets/node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
 
 </body>
 
