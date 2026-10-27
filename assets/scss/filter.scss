@@ -20,17 +20,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // end 
 .time-line {
     margin-top: 20px;
@@ -60,17 +49,6 @@ body {
     padding-left: 0.5rem;
   }
 }
-// .breadcrumb-item+.breadcrumb-item {
-//     padding-right: 0.5rem;
-//     padding-left: 0;
-// }
-
-// .breadcrumb-ite::after {
-//     float: right;
-//     padding-left: 0.5rem;
-//     padding-right: 0;
-//     content: "/";
-// }
 
 .category-top {
     margin: 0px auto;
@@ -105,13 +83,6 @@ body {
     white-space: nowrap;
 }
 
-// .category-divider {
-//     width: 4px;
-//     height: 32px;
-//     background-color: $color-red;
-//     border-radius: 0px 3px 3px 0px;
-
-// }
 
 .category-sort {
     position: relative;
@@ -521,6 +492,9 @@ div.parent {
             }
         }
 
+    }
+    .category-sort{
+        gap: 8px!important;
     }
 
 }

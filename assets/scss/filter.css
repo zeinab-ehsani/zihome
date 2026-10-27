@@ -412,4 +412,7 @@ div.parent {
     margin-top: 20px !important;
     width: 100% !important;
   }
+  .category-sort {
+    gap: 8px !important;
+  }
 }/*# sourceMappingURL=filter.css.map */
