@@ -743,15 +743,18 @@ div.title > h5 {
 div.title {
   text-align: center;
   width: 100%;
-  top: 37%;
+  top: 41%;
   left: 0px;
+  align-items: center;
 }
 div.title > h6 {
   font-size: 2rem;
   font-weight: 400;
+  width: 100%;
 }
 div.title > h5 {
   font-size: 3rem;
+  width: 100%;
 }
 
 .parentswiper {
@@ -2245,7 +2248,7 @@ p.text-fade {
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   div.title {
-    top: 60%;
+    top: 50%;
   }
   div.title > h6 {
     font-size: 1.75rem;
@@ -2317,7 +2320,7 @@ p.text-fade {
     outline-offset: 6px;
   }
   div.title {
-    top: 60%;
+    top: 50%;
   }
   div.title > h6 {
     font-size: 1.75rem;
@@ -2529,7 +2532,7 @@ p.text-fade {
     outline-width: 1.2px;
   }
   div.title {
-    top: 50%;
+    top: 45%;
   }
   div.title > h6 {
     font-size: 1.375rem;
@@ -3178,7 +3181,7 @@ p.text-fade {
     outline-width: 1px;
   }
   div.title {
-    top: 44%;
+    top: 46%;
   }
   div.title > h6 {
     font-size: 1rem;

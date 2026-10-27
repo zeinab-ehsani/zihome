@@ -1228,18 +1228,23 @@ div.title {
 
 
 div.title {
+    
     text-align: center;
     width: 100%;
-    top: 37%;
+    top: 41%;
     left: 0px;
+    align-items: center;
 
     >h6 {
         font-size: 2rem;
         font-weight: 400;
+        width: 100%;
     }
 
     >h5 {
         font-size: 3rem;
+                width: 100%;
+
     }
 }
 
@@ -3124,7 +3129,7 @@ p.text-fade {
 
 @include media(1200) {
     div.title {
-        top: 60%;
+        top: 50%;
 
         >h6 {
             font-size: 1.75rem;
@@ -3257,7 +3262,7 @@ p.text-fade {
     }
 
     div.title {
-        top: 60%;
+        top: 50%;
 
         >h6 {
             font-size: 1.75rem;
@@ -3604,7 +3609,7 @@ p.text-fade {
     }
 
     div.title {
-        top: 50%;
+        top: 45%;
 
         >h6 {
             font-size: 1.375rem;
@@ -4628,7 +4633,7 @@ p.text-fade {
 
 
     div.title {
-        top: 44%;
+        top: 46%;
 
         >h6 {
             font-size: 1rem;
