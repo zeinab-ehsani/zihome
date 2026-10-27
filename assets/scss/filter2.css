@@ -425,6 +425,16 @@ div.filter {
   }
   .category-card > img {
     width: 80% !important;
+    height: 70% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .category-card {
+    height: 160px !important;
+  }
+  .category-card > img {
+    width: 80% !important;
+    height: 80% !important;
   }
 }
 @media screen and (min-width: 540px) and (max-width: 767.98px) {
@@ -441,6 +451,14 @@ div.filter {
     margin-top: 20px !important;
     width: 100% !important;
   }
+  .category-card {
+    height: 200px !important;
+    padding-top: 15px !important;
+  }
+  .category-card > img {
+    width: 70% !important;
+    height: 70% !important;
+  }
 }
 @media screen and (max-width: 540px) {
   .time-line {
@@ -448,13 +466,11 @@ div.filter {
   }
   button.category-card {
     width: 100%;
-    height: 180px !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    padding: 14px;
     background: #fff;
     border: 1px solid #d1d1d4;
     border-radius: 16px;
@@ -468,8 +484,7 @@ div.filter {
     margin: 7px 0px;
   }
   button.category-card img {
-    margin-bottom: 20px !important;
-    width: 80% !important;
+    margin-bottom: 10px !important;
   }
   div.main {
     flex-direction: column !important;
@@ -480,5 +495,13 @@ div.filter {
   div.main > div.filter > .filter-card {
     margin-top: 20px !important;
     width: 100% !important;
+  }
+  .category-card {
+    height: 160px !important;
+    padding-top: 15px !important;
+  }
+  .category-card > img {
+    width: 70% !important;
+    height: 60% !important;
   }
 }/*# sourceMappingURL=filter2.css.map */
