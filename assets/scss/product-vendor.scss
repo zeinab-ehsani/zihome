@@ -3,7 +3,6 @@
 @font-face {
     font-family: IRANYekan;
     src: url(../font/IRANYekanXFaNum-Regular.woff2);
-    // src: url(./assets/font/IRANYekanXFaNum-Regular.woff2);
 }
 
 $color-red: #DC2655;
@@ -212,7 +211,6 @@ $main-red: #de2557;
     background: #fff;
     padding: clamp(16px, 0.5rem + 2vw, 32px);
 
-    // ---------- گالری ----------
     .gallery {
         display: flex;
         gap: 16px;
@@ -264,7 +262,6 @@ $main-red: #de2557;
         align-items: center;
         justify-content: center;
         aspect-ratio: 1 / 1;
-        // border: 1px solid $main-border;
         border-radius: 8px;
         overflow: hidden;
 
@@ -513,7 +510,7 @@ $similar-red: #de2557;
 
 .similar-card {
     border: 1px solid #e3e3e3;
-    box-shadow: 0 4px 0 #d9d9d9;  
+    box-shadow: 0 4px 0 #d9d9d9;
 }
 
 .similar-img {
@@ -536,23 +533,42 @@ $similar-red: #de2557;
 .similar-dot {
     width: 16px;
     height: 8px;
-    border-radius:24px;
+    border-radius: 24px;
 
-    &.dot-gray   { background: #7c7c7c; }
-    &.dot-sand   { background: #a89f91; }
-    &.dot-brown  { background: #6b5a3a; }
-    &.dot-dark   { background: #4b4f52; }
-    &.dot-orange { background: #f4a623; }
-    &.dot-red    { background: #f06b6b; }
+    &.dot-gray {
+        background: #7c7c7c;
+    }
+
+    &.dot-sand {
+        background: #a89f91;
+    }
+
+    &.dot-brown {
+        background: #6b5a3a;
+    }
+
+    &.dot-dark {
+        background: #4b4f52;
+    }
+
+    &.dot-orange {
+        background: #f4a623;
+    }
+
+    &.dot-red {
+        background: #f06b6b;
+    }
 }
 
-.btn-red{
+.btn-red {
     border: 2px solid $color-red;
     border-radius: 8px;
     background-color: white;
     color: $color-red;
     font-size: $font-14;
-}@import "../../media";
+}
+
+@import "../../media";
 
 @font-face {
     font-family: IRANYekan;
@@ -1064,7 +1080,7 @@ $similar-red: #de2557;
 
 .similar-card {
     border: 1px solid #e3e3e3;
-    box-shadow: 0 4px 0 #d9d9d9;  
+    box-shadow: 0 4px 0 #d9d9d9;
 }
 
 .similar-img {
@@ -1087,17 +1103,34 @@ $similar-red: #de2557;
 .similar-dot {
     width: 16px;
     height: 8px;
-    border-radius:24px;
+    border-radius: 24px;
 
-    &.dot-gray   { background: #7c7c7c; }
-    &.dot-sand   { background: #a89f91; }
-    &.dot-brown  { background: #6b5a3a; }
-    &.dot-dark   { background: #4b4f52; }
-    &.dot-orange { background: #f4a623; }
-    &.dot-red    { background: #f06b6b; }
+    &.dot-gray {
+        background: #7c7c7c;
+    }
+
+    &.dot-sand {
+        background: #a89f91;
+    }
+
+    &.dot-brown {
+        background: #6b5a3a;
+    }
+
+    &.dot-dark {
+        background: #4b4f52;
+    }
+
+    &.dot-orange {
+        background: #f4a623;
+    }
+
+    &.dot-red {
+        background: #f06b6b;
+    }
 }
 
-.btn-red{
+.btn-red {
     border: 2px solid $color-red;
     border-radius: 8px;
     background-color: white;
@@ -1105,18 +1138,20 @@ $similar-red: #de2557;
     font-size: $font-14;
 }
 
-@include media(768){
-    .vendor-card{
-        margin-top: 10px!important;
+@include media(768) {
+    .vendor-card {
+        margin-top: 10px !important;
     }
 }
-@include media(540){
-    .vendor-card{
-        margin-top: 10px!important;
+
+@include media(540) {
+    .vendor-card {
+        margin-top: 10px !important;
     }
 }
-@include media(0){
-    .vendor-card{
-        margin-top: 10px!important;
+
+@include media(0) {
+    .vendor-card {
+        margin-top: 10px !important;
     }
 }
