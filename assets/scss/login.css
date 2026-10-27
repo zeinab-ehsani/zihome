@@ -46,14 +46,13 @@ div.mainlogin {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 200dvh;
+  min-height: 100dvh;
+  padding: clamp(4rem, 17dvh, 10rem);
   background-image: url("../img/login-img/login.png");
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;
-  background-repeat: repeat-y;
-  padding: clamp(4rem, 17dvh, 10rem);
-  background-size: 100% auto;
+  background-size: auto;
+  background-attachment: fixed;
 }
 div.mainlogin > div > p {
   font-size: clamp(0.875rem, 0.8333rem + 0.1852vw, 1rem);

@@ -187,7 +187,6 @@ $vendor-border: #e3e3e3;
         }
     }
 
-    // دسکتاپ: کارت موقع اسکرول بالای صفحه بچسبه
     @media (min-width: 992px) {
         position: sticky;
         top: 16px;
@@ -1104,4 +1103,20 @@ $similar-red: #de2557;
     background-color: white;
     color: $color-red;
     font-size: $font-14;
+}
+
+@include media(768){
+    .vendor-card{
+        margin-top: 10px!important;
+    }
+}
+@include media(540){
+    .vendor-card{
+        margin-top: 10px!important;
+    }
+}
+@include media(0){
+    .vendor-card{
+        margin-top: 10px!important;
+    }
 }
